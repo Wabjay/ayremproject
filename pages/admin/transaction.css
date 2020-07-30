@@ -1,0 +1,563 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+@import url("../../css/fonts.css");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+/* MAIN CSS */
+main {
+  margin-top: 0;
+  padding-top: 24px;
+  background: #ffffff;
+}
+.offer {
+  background: #ffffff;
+  width: 100%;
+  padding-bottom: 50px;
+}
+.summary {
+  width: 90%;
+  max-width: 460px;
+  margin: 72px auto 0;
+  padding-bottom: 135px;
+}
+.content {
+  position: relative;
+  padding: 22px 24px;
+  margin: 0 auto;
+  width: 100%;
+}
+.info {
+  margin-bottom: 30px;
+  width: 270px;
+}
+.heading {
+  font-family: Sailec-Medium;
+  font-size: 24px;
+  line-height: 25px;
+  color: #282f45;
+  margin-bottom: 57px;
+  /* MARGIN BOTTOM USD FOR DATA SUMMARY PAGE */
+}
+.note {
+  font-family: Sailec-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #6b6f7d;
+}
+
+form {
+  margin-bottom: 128px;
+  box-sizing: border-box;
+}
+form div {
+  margin-bottom: 32px;
+}
+label {
+  display: block;
+  padding-bottom: 8px;
+  font-family: Sailec-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #43495c;
+  width: 100%;
+}
+
+form input,
+select {
+  width: 100%;
+  height: 48px;
+  color: #6b6f7d;
+  padding: 13px auto 13px 10px;
+  padding-left: 10px;
+  border: #e5e5e5 0.5px solid;
+  background: #ffffff;
+  border: 0.5px solid #c5c9d5;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.flex {
+  display: flex;
+}
+.flex input {
+  width: 20px;
+  margin-right: 16px;
+}
+#safe {
+  justify-content: space-evenly;
+}
+#safe p {
+  margin: 0;
+  padding: 0;
+}
+.safedCard {
+  position: relative;
+  box-sizing: border-box;
+  width: 310px;
+  height: 174px;
+  background-image: url(../images/card.png);
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+#safedname {
+  padding: 0;
+  margin-bottom: 8px;
+  font-family: Sailec-Medium;
+  font-size: 20px;
+  line-height: 23px;
+  color: #ffffff;
+}
+#saved {
+  background: #05d16e;
+  border-radius: 6px;
+  font-family: Sailec-Medium;
+  font-size: 10px;
+  line-height: 12px;
+  padding: 5px 8px;
+  margin-bottom: 46px;
+  width: 108px;
+  color: #ffffff;
+}
+#acctnum {
+  font-family: Sailec-Regular;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 27px;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+}
+.enterAcct {
+  font-family: Sailec-Medium;
+  font-size: 12px;
+  line-height: 14px;
+  color: #4f4f4f;
+  margin-left: 24px;
+}
+/*  TRANSACTION SUMMARY PAGE FOR SELL */
+
+.transaction-summary {
+  max-width: 450px;
+  margin: auto;
+}
+.transaction-summary .inner-popup {
+  border-bottom: none;
+}
+.line {
+  margin: auto;
+  margin-top: 32px;
+  width: 90%;
+  border-bottom: 0.5px solid #edf2f7;
+}
+
+/* TRANSACTION SUMMARY */
+select {
+  background: transparent;
+}
+form p {
+  font-family: Sailec-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #6b6f7d;
+  width: 90%;
+  padding-top: 16px;
+  margin-bottom: 64px;
+}
+.button {
+  font-family: Sailec-Medium;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  background: #0032c9;
+  border-radius: 4px;
+  padding: 14px 30px;
+  height: 48px;
+  margin: 0 auto;
+}
+.button-wrapper {
+  text-align: center;
+}
+
+/*  FOR TRANSACTION SUMMARY PAGE */
+.bold {
+  grid-column: 1/3;
+  padding-top: 72px;
+  font-family: Sailec-Bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 17px;
+  letter-spacing: 0.1em;
+  color: #6b6f7d;
+}
+.order {
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 155px 1fr;
+  margin-bottom: 40px;
+}
+.green {
+  color: #08ad5e;
+}
+.order-info p,
+.order-details p {
+  padding: 8px 0;
+}
+.order-info {
+  font-family: Sailec-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #9b9ea9;
+}
+.order-details {
+  font-family: Sailec-Medium;
+  font-size: 16px;
+  line-height: 19px;
+  color: #43495c;
+  justify-self: self-end;
+  text-align: right;
+}
+
+/* PAYMENT METHOD PAGE */
+.payment-method {
+  grid-column: 1/3;
+  width: 100%;
+  position: relative;
+}
+.payment-method div {
+  background-color: #f9fbfe;
+  background-image: url(../../images/payment-arrow.png);
+  background-position: 95%;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  padding: 15px;
+  padding-right: auto;
+  width: 200px;
+}
+
+.method {
+  font-family: Sailec-Medium;
+  font-size: 16px;
+  line-height: 19px;
+  color: #282f45;
+}
+
+/* PAYMENT CONFIRMATION PAGE */
+
+.confirm-payment-wrap {
+  background-color: #f9fbfe;
+  display: flex;
+  justify-content: space-between;
+  width: 285px;
+  margin: 0;
+  margin-bottom: 32px;
+  border: 0.5px solid #0032c9;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 20px 18px;
+}
+
+.confirm-payment-wrap .order-info {
+  padding-right: 10px;
+}
+/* PAYENT WITH PHONE */
+.total {
+  display: flex;
+  justify-content: space-between;
+  background: #0032c9;
+  border-radius: 4px;
+  align-content: center;
+  padding: 15px 12px;
+  color: #ffff;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.pay-by-phone {
+  width: 100%;
+}
+.confirm-payment-wrap {
+  width: 100%;
+}
+.pay-by-phone div:nth-child(3) > div:nth-child(1) {
+  padding-top: 21px;
+  border-top: 0.5px solid #ced9e8;
+  margin-bottom: 40px;
+}
+/* STYLE OF CRYPTO PAGE */
+.crypto-details {
+  width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 0;
+  border: 0.5px solid #ced9e8;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.crypto-details p {
+  font-family: Sailec-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #6b6f7d;
+  padding: 10px;
+  margin: 0;
+  border-bottom: 0.5px solid #ced9e8;
+  box-sizing: content-box;
+  width: auto;
+}
+.crypto-details p:nth-child(even) {
+  justify-self: self-end;
+  text-align: right;
+  background: #f9fbfe;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: #6b6f7d;
+  /* padding-right: 16px; */
+}
+
+#product {
+  padding: 20px 10px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  width: 90%;
+  margin: auto;
+  border: solid 0.5px lightgray;
+}
+#product p {
+  text-align: center;
+  font-size: 20px;
+  font-family: sailec-bold;
+}
+#product div button {
+  display: block;
+  padding: 10px;
+  border: solid 0.5px lightgray;
+  background: #0032c9;
+  box-shadow: 0px 1px 2px #c5c9d5;
+  margin: 20px auto;
+  width: 90%;
+  font-family: sailec-medium;
+  text-align: center;
+  color: white;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+#add,
+#show,
+#country {
+  width: 80%;
+  max-width: 400px;
+  grid-column: 1/3;
+  padding: 20px 10px;
+  margin: 50px auto;
+  box-shadow: 0px 2px 4px #c5c9d5;
+  border: 0.5px solid lightgray;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  text-align: center;
+}
+#add input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  border: 0.5px solid lightgray;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+#add div div input:nth-child(2) {
+  border: none;
+  width: 200px;
+  margin: auto;
+}
+#show div div {
+  display: flex;
+  align-items: center;
+}
+#show a {
+  margin-right: 50px;
+  margin-left: auto;
+  padding: 5px 10px;
+  border: none;
+  font-family: sailec-Italic;
+}
+#show a:hover {
+  border: solid lightgray 0.5px;
+}
+#show img {
+  width: 30px;
+  height: 30px;
+  margin: 10px 20px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+#country a {
+  display: block;
+  padding: 5px 10px;
+  border: none;
+  font-family: sailec-Italic;
+  background: lightgrey;
+  width: 100px;
+  margin: 10px auto;
+  color: black;
+}
+#country a:hover {
+  border: solid lightgray 0.5px;
+  box-shadow: 1px 2px 4px #eeee;
+}
+/*  */
+
+/*  */
+@media only screen and (min-width: 351px) {
+  /* MAIN CSS */
+  form input,
+  select {
+    width: 100%;
+  }
+  form p {
+    max-width: 317px;
+  }
+
+  label {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 750px) {
+  /* MAIN PART */
+  main {
+    background: #f9fbfe;
+  }
+  .offer {
+    background: #ffffff;
+    border: 0.5px solid #ced9e8;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 984px;
+    margin: auto;
+    padding-top: 29px;
+    padding-bottom: 50px;
+  }
+  .info {
+    /* justify-self: center; */
+    width: auto;
+  }
+  form {
+    justify-self: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 850px) {
+  /* MAIN PART */
+
+  .offer {
+    margin-left: 24px;
+  }
+  .heading {
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 18px;
+  }
+  .note {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  form {
+    width: 100%;
+  }
+  form p {
+    width: 317px;
+    padding-top: 16px;
+  }
+  .order {
+    grid-template-columns: 1fr 1fr;
+  }
+  .order-details {
+    justify-self: self-end;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* MAIN PART */
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+  }
+  .info {
+    grid-column: 1/2;
+    justify-self: center;
+    margin-bottom: 30px;
+  }
+  form {
+    grid-column: 2/3;
+    grid-row: 1;
+    justify-self: self-end;
+  }
+  form input,
+  select,
+  .crypto-details {
+    max-width: 338px;
+  }
+  .button-wrapper {
+    text-align: right;
+  }
+  .payment-method {
+    grid-column: 1/2;
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .offer {
+    max-width: 984px;
+  }
+  .content {
+    grid-template-columns: 385px 1fr;
+    column-gap: 113px;
+  }
+  .pay-by-phone {
+    width: 90%;
+  }
+}

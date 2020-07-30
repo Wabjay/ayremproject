@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Registration Page</title>
+    <link
+      rel="shortcut icon"
+      href="../../images/favicon.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="../css/sign.css" />
+    <style></style>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html"
+        ><img src="../images/logo_white.png" alt="" class="logo"
+      /></a>
+      <!-- <img src="../images/logo" alt=" Logo" class="logo" /> -->
+
+      <p>
+        Register your account today <br />
+        <span class="green">it's fast and easy</span>
+      </p>
+    </header>
+    <main>
+      <section>
+        <p class="header">Get Started <a href="#">in seconds</a></p>
+
+        <form action="" id="form" autocomplete="on">
+          <div class="form-control">
+            <label for="fullname">Full name</label>
+            <input
+              type="text"
+              name="fullname"
+              id="fullname"
+              value=""
+              placeholder="Stonecold Adeniran"
+            />
+            <small>This is an error message</small>
+          </div>
+          <div class="form-control">
+            <label for="username">User name</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              value=""
+              placeholder="@Stonecold Adeniran"
+            />
+            <small>This is an error message</small>
+          </div>
+          <div class="form-control">
+            <label for="email">Email adress</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              value=""
+              placeholder="@Stonecoldadeniran@gmail.com"
+            />
+            <small>This is an error message</small>
+          </div>
+
+          <div class="form-control">
+            <label for="phone">Enter your phone number</label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              value=""
+              placeholder="08123133199"
+            />
+            <small>This is an error message</small>
+          </div>
+
+          <div class="form-control">
+            <label for="refer">Who reffered you?</label>
+            <input
+              type="text"
+              name="refer"
+              id="refer"
+              value=""
+              placeholder="Enter refferal Code"
+            />
+          </div>
+
+          <div class="form-control">
+            <label for="password">Type in a strong password</label>
+            <!-- <div class="input-container"> -->
+            <input
+              type="password"
+              name="password"
+              id="password"
+              value=""
+              placeholder="Enter your former password"
+              autocomplete="off"
+            />
+            <img src="../images/show.png" alt="" id="show" />
+            <!-- </div> -->
+            <small>This is an error message</small>
+          </div>
+
+          <input type="submit" value="Create your account" class="submit" />
+        </form>
+
+        <p class="signin">
+          Already have an account? <a href="login.html"> Sign in</a>
+        </p>
+        <p class="privacy">
+          By signing up you agree to our
+          <a href="policy.html"> Data, Terms and Privacy policy</a>
+        </p>
+      </section>
+    </main>
+
+    <script src="../js/validations.js"></script>
+  </body>
+</html>

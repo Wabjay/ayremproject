@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ayrem Notification</title>
+    <link rel="shortcut icon" href="../../images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/dashboard.css" />
+    <link rel="stylesheet" href="../../css/notification.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!--  header path-->
+      <header>
+        <div class="profile">
+          <a href="../dashboard/notification.html" class="notify"
+            ><img
+              src="../../images/notification.png"
+              alt="notification"
+              id="notification"
+            />
+            <span id="badge">3</span>
+          </a>
+          <div class="avatar">
+            <a href="#"><img src="../../images/avatar.png" alt="avatar"/></a>
+            <a href="#"
+              ><img
+                src="../../images/downarrow.png"
+                alt="dropdown"
+                onclick="myFunction()"
+                id="down-arrow"
+                class="down-arrow"
+            /></a>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="../dashboard/settings.html" class="my-profile"
+                >My Profile</a
+              >
+              <a href="#" class="logout">Logout</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- ASIDE PART -->
+
+      <aside>
+        <div class="aside-content">
+          <a href="#">
+            <img src="../../images/ham.svg" alt="toggle-menu" class="hide-desktop" id="menu-open" /></a>
+          <div class="sidebar hide-mobile show-desktop">
+            <div>
+              <a href="#">
+                <img src="../../images/ham.svg" alt="toggle-menu" class="exit hide-desktop" id="exit" /></a>
+              <a href="../index.html">
+                <img src="../../images/dashboard-logo.png" class="logo" alt="Ayrem Logo" /></a>
+            </div>
+      
+            <!-- links/ dropdown content -->
+            <ul class="links">
+              <li class="activelink">
+                <a href="../../pages/dashboard/dashboard.html" id="dashboard-btn" class="dashboard">
+                  Dashboard</a>
+              </li>
+              <li>
+                <a href="../../pages/dashboard/referral.html" id="referral-btn" class="refferal">Referrals</a>
+              </li>
+              <li>
+                <a href="../../pages/dashboard/settings.html" id="setting-btn" class="setting">Setting</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+      <!-- MAIN PART -->
+      <main>
+        <p class="header">Notification</p>
+        <section class="notification-container">
+          <a href="" class=" notice unread">
+            <div class="notification">
+              <img src="../../images/setting_logo.png" alt="setting_logo" />
+              <p class="title">Welcome to Ayrem Stonecold</p>
+              <p>
+                Thanks for signing up stonecold, we are glad to have you here.
+                Now proceed to buy and sell your bitcoins, amazon cards and
+                dataplans with us. Just now
+              </p>
+            </div>
+          </a>
+          <a href="" class="notice unread">
+            <div class="notification">
+              <img src="../../images/setting_logo.png" alt="setting_logo" />
+              <p class="title">Payment Received</p>
+              <p>
+                Your payment of N8000 has been receievd sucessfully on our phone
+                number for the Airtel dataplan you purchased.
+              </p>
+            </div>
+          </a>
+
+          <a href="" class="notice unread">
+            <div class="notification">
+              <img src="../../images/setting_logo.png" alt="setting_logo" />
+              <p class="title">Data sent sucessfully</p>
+              <p>
+                Cheers man !!!. Your 1 gig airtel Dataplan has been sent
+                sucessfully 29th march, 2019
+              </p>
+            </div>
+          </a>
+
+          <a href="" class="notice unread">
+            <div class="notification">
+              <img src="../../images/setting_logo.png" alt="setting_logo" />
+              <p class="title">Verification failed</p>
+              <p>
+                We could not verify your payment for the dataplan you ordered ,
+                please ensuse you make your payment
+              </p>
+            </div>
+          </a>
+
+          <a href="" class="notice unread">
+            <div class="notification">
+              <img src="../../images/setting_logo.png" alt="setting_logo" />
+              <p class="title">Payment sent sucessfully</p>
+              <p>
+                Your payment of N8000 has been sent to your bank account for the
+                0.00043433 bitcoin you sold to us
+              </p>
+            </div>
+          </a>
+
+          <a href="" class="notice unread">
+            <div class="notification">
+              <img src="../../images/setting_logo.png" alt="setting_logo" />
+              <p class="title">Payment received</p>
+              <p>
+                Your payment of 0.00043433 has been received sucessfully. Please
+                wait while we process your payment to your bank account.
+              </p>
+            </div>
+          </a>
+
+          <a href="" class="notice unread">
+            <div class="notification">
+              <img src="../../images/setting_logo.png" alt="setting_logo" />
+              <p class="title">Giftcard verification sucessful</p>
+              <p>
+                Your $200 Amazon giftcard has been verifed sucessfully. Please
+                wait while we process your payment to your bank account
+              </p>
+            </div>
+          </a>
+
+          <a href="" class="notice unread">
+            <div class="notification">
+              <img src="../../images/setting_logo.png" alt="setting_logo" />
+              <p class="title">Payment sent sucessfully</p>
+              <p>
+                Your payment of N20,000 has been sent to your bank account for
+                the payment of your $200 amazon giftcard
+              </p>
+            </div>
+          </a>
+
+          <a href="" class="notice unread">
+            <div class="notification">
+              <img src="../../images/setting_logo.png" alt="setting_logo" />
+              <p class="title">Verification failed</p>
+              <p>
+                We could not verify your payment for the giftcard you sold, The
+                giftcard you uploaded has been used already.
+              </p>
+            </div>
+          </a>
+
+          <a href="" class="notice unread">
+            <div class="notification">
+              <img src="../../images/setting_logo.png" alt="setting_logo" />
+              <p class="title">Verification failed</p>
+              <p>
+                We could not verify your payment for the bitcoin you wish to
+                sell, Please kindly make the bitcoin payment.
+              </p>
+            </div>
+          </a>
+        </section>
+      </main>
+    </div>
+    <script src="../../js/dashboard.js"></script>
+  </body>
+</html>

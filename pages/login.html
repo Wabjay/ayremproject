@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ayrem Login</title>
+    <link
+      rel="shortcut icon"
+      href="../../images/favicon.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="../css/sign.css" />
+    <style>
+      form input,
+      .input-container {
+        max-width: 641px;
+      }
+      @media only screen and (min-width: 1024px) {
+        main {
+          width: 552px;
+          margin: auto;
+          margin-bottom: 94px;
+        }
+        header p {
+          font-size: 30px;
+          line-height: 44px;
+        }
+        section {
+          width: 100%;
+          box-sizing: border-box;
+        }
+        form {
+          width: 100%;
+          max-width: 552px;
+        }
+        form div {
+          max-width: 504px;
+          grid-column: 1/3;
+          margin: 0;
+          text-align: left;
+        }
+        form input {
+          width: 100%;
+          max-width: 504px;
+        }
+        .input-container {
+          max-width: 504px;
+          margin-left: 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html"
+        ><img src="../images/logo_white.png" alt="" class="logo"
+      /></a>
+      <p>
+        Welcome back <br />
+        <span class="green">We are glad to have you</span>
+      </p>
+    </header>
+    <main>
+      <section>
+        <p class="header">Login to your account</p>
+
+        <form action="" id="form" autocomplete="on">
+          <div class="form-control">
+            <label for="username">Email address/Username</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              value=""
+              placeholder="Enter your email address/username"
+            /><small>This is an error message</small>
+          </div>
+
+          <div class="form-control">
+            <label for="password">Type in a strong password</label>
+            <div class="input-container">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                value=""
+                placeholder="Enter your password"
+                autocomplete="off"
+              />
+              <img src="../images/show.png" alt="" id="show" />
+            </div>
+            <p class="forget"><a href="recover.html">Forget password</a></p>
+          </div>
+
+          <input type="submit" value="Login to dashboard" class="submit" />
+        </form>
+
+        <p class="signin long">
+          Don't have an account? <a href="signup.html">Register today</a>
+        </p>
+      </section>
+    </main>
+  </body>
+  <script src="../js/validations.js"></script>
+</html>

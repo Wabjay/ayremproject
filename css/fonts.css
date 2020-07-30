@@ -1,0 +1,40 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+@font-face {
+  font-family: sailecBlack;
+  src: url(../fonts/SailecBlack.otf);
+}
+@font-face {
+  font-family: sailecBlack-Italic;
+  src: url(../fonts/SailecBlackItalic.otf);
+}
+@font-face {
+  font-family: sailec-Bold;
+  src: url(../fonts/SailecBold.otf);
+}
+@font-face {
+  font-family: sailec-Light;
+  src: url(../fonts/SailecLight.otf);
+}
+@font-face {
+  font-family: sailec-Regular;
+  src: url(../fonts/SailecRegular.otf);
+}
+@font-face {
+  font-family: sailec-Thin;
+  src: url(../fonts/SailecThin.otf);
+}
+@font-face {
+  font-family: sailec-MediumItalic;
+  src: url(../fonts/SailecMediumItalic.otf);
+}
+
+@font-face {
+  font-family: sailec-Medium;
+  src: url(../fonts/SailecMedium.otf);
+}

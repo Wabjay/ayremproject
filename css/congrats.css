@@ -1,0 +1,111 @@
+@import url("../css/fonts.css");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+main {
+  background: #f9fbfe;
+}
+.offer {
+  background: #ffffff;
+  width: 100%;
+}
+#congrats {
+  background: #ffffff;
+  margin: auto;
+  width: 100%;
+  max-width: 552px;
+  text-align: center;
+  border: solid 0.5px #f9fbfe;
+  border-radius: 8px 8px 0px 0px;
+}
+#congrats img {
+  width: 100%;
+}
+
+.button {
+  font-family: Sailec-Medium;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  background: #0032c9;
+  border-radius: 4px;
+  padding: 15px 20px;
+  height: 48px;
+  text-align: center;
+  margin: 24px auto;
+  width: 228px;
+}
+.congrats p {
+  margin: auto;
+}
+.heading {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 24px;
+  font-family: Sailec-Bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+}
+.note {
+  width: 80%;
+  font-family: Sailec-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #6b6f7d;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 560px) {
+  .offer {
+    background: #ffffff;
+    border: 0.5px solid #ced9e8;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 984px;
+    margin: auto;
+    padding-top: 29px;
+    padding-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 750px) {
+  main {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding-top: 62px;
+  }
+  aside {
+    grid-area: aside;
+  }
+  header {
+    grid-area: header;
+  }
+  #congrats img {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 850px) {
+  /* MAIN PART */
+
+  .offer {
+    margin-left: 24px;
+  }
+  #congrats img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .offer {
+    padding-top: 77px;
+    padding-bottom: 280px;
+    max-width: 984px;
+  }
+}

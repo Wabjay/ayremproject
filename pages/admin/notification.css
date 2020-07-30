@@ -1,0 +1,194 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+@import url("../../css/fonts.css");
+* {
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Sailec", sans-serif;
+}
+
+.setting {
+  color: #6b6f7d;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  padding-left: 42px;
+}
+.user-container .search {
+  margin: 30px 0;
+  text-align: center;
+  display: block;
+}
+input {
+  border: solid 0.5px lightgray;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 14px;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 500px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.search button {
+  display: block;
+  padding: 10px;
+  margin: auto;
+  margin-top: 20px;
+  width: 200px;
+  font-family: seilec-Medium;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.test {
+  width: 100%;
+}
+.search button:hover {
+  border: solid lightgray 0.5px;
+  box-shadow: 1px 2px 4px #dbe2f7;
+}
+.header {
+  max-width: 260px;
+  font-family: Sailec-Medium;
+  font-size: 20px;
+  line-height: 23px;
+  color: #282f45;
+  margin: auto;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.user-container,
+.notification-container {
+  background: #ffffff;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.user,
+.notification {
+  width: 90%;
+  font-family: Sailec-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #6b6f7d;
+  border-bottom: 0.5px solid #ced9e8;
+  padding-bottom: 10px;
+  margin: 0 auto;
+}
+.user {
+  width: 80%;
+  max-width: 500px;
+  margin: 10px auto;
+  border: none;
+  text-align: center;
+}
+.user div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.user img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.user input {
+  border: solid 0.5px lightgray;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-size: 14px;
+  margin: 10px 0;
+  width: 80%;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+
+.user .title,
+.notification .title {
+  font-family: Sailec-Regular;
+  font-size: 16px;
+  font-weight: bolder;
+  color: #282f45;
+  margin: 0;
+  padding: 5px 0;
+  padding-top: 20px;
+}
+
+.user .title {
+  align-self: center;
+  padding: 0;
+  padding-left: 10px;
+}
+p {
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+@media only screen and (min-width: 750px) {
+  /* MAIN PART */
+  .user {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+  }
+  .user div {
+    display: flex;
+    justify-items: flex-start;
+    margin-left: 0;
+  }
+  .user input {
+    width: 100%;
+  }
+  .user-container,
+  .notification-container {
+    background: #ffffff;
+    border: 0.5px solid #ced9e8;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 984px;
+    margin: auto;
+    padding-top: 29px;
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  /* MAIN PART */
+
+  .user-container,
+  .notification-container {
+    margin-left: 24px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .user-container,
+  .notification-container {
+    max-width: 984px;
+  }
+}

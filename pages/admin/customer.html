@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Customers</title>
+    <link rel="shortcut icon" href="../../images/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="dashboard.css" />
+    <link rel="stylesheet" href="notification.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!--  header path-->
+      <header>
+        <div class="profile">
+          <a href="../admin/notification.html" class="notify"
+            ><img
+              src="../../images/notification.png"
+              alt="notification"
+              id="notification"
+            />
+            <span id="badge">3</span>
+          </a>
+          <div class="avatar">
+            <a href="#"><img src="../../images/avatar.png" alt="avatar"/></a>
+
+            <a href="#"
+              ><img
+                src="../../images/downarrow.png"
+                alt="dropdown"
+                onclick="myFunction()"
+                id="down-arrow"
+                class="down-arrow"
+            /></a>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#" class="logout">Logout</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- ASIDE PART -->
+
+      <aside>
+        <div class="aside-content">
+          <a href="#">
+            <img
+              src="../../images/ham.svg"
+              alt="toggle-menu"
+              class="hide-desktop"
+              id="menu-open"
+          /></a>
+          <div class="sidebar hide-mobile show-desktop">
+            <div>
+              <a href="#">
+                <img
+                  src="../../images/ham.svg"
+                  alt="toggle-menu"
+                  class="exit hide-desktop"
+                  id="exit"
+              /></a>
+              <a href="../index.html">
+                <img
+                  src="../../images/dashboard-logo.png"
+                  class="logo"
+                  alt="Ayrem Logo"
+              /></a>
+            </div>
+
+            <!-- links/ dropdown content -->
+            <ul class="links">
+              <li>
+                <a href="index.html" id="admin-btn" class="admin"> Homepage</a>
+              </li>
+              <li class="activelink">
+                <a href="customer.html" id="customer-btn" class="customer">
+                  Customers</a
+                >
+              </li>
+              <li>
+                <a href="products.html" id="products-btn" class="products"
+                  >Products</a
+                >
+              </li>
+              <li>
+                <a
+                  href="transactions.html"
+                  id="transaction-btn"
+                  class="transaction"
+                  >Transactions</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+      <!-- MAIN PART -->
+      <main>
+        <section id="one">
+          <p class="header">Customers</p>
+        </section>
+
+        <section class="user-container">
+          <div class="search">
+            <input type="text" id="search" placeholder="Search Customer" />
+            <button>Search Customer</button>
+          </div>
+          <div class="user">
+            <div>
+              <img src="../../users/avatar.png" alt="" />
+              <p class="title">Customer Name</p>
+            </div>
+
+            <input type="text" class="" />
+          </div>
+          <div class="user">
+            <div>
+              <img src="../../users/avatar.png" alt="" />
+              <p class="title">Customer Name</p>
+            </div>
+
+            <input type="text" class="" />
+          </div>
+          <div class="user">
+            <div>
+              <img src="../../users/avatar.png" alt="" />
+              <p class="title">Customer Name</p>
+            </div>
+
+            <input type="text" class="" />
+          </div>
+          <div class="user">
+            <div>
+              <img src="../../users/avatar.png" alt="" />
+              <p class="title">Customer Name</p>
+            </div>
+
+            <input type="text" class="" />
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="../../js/dashboard.js"></script>
+  </body>
+</html>

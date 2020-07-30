@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../../css/dashboard.css" />
+    <link rel="stylesheet" href="../../css/uploadcard.css" />
+    <title>Upload Giftcards</title>
+    <link rel="shortcut icon" href="../../images/favicon.png" type="image/x-icon">
+  </head>
+  <style>
+    /* .button-wrapper {
+      margin-top: 112px;
+    } */
+  </style>
+  <body id="page2">
+    <div class="container">
+      <!--  header path-->
+  <header>
+    <div class="profile">
+      <a href="../dashboard/notification.html" class="notify"><img src="../../images/notification.png" alt="notification"
+          id="notification" />
+        <span id="badge">3</span></a></a>
+      <div class="avatar">
+        <a href="#"><img src="../../images/avatar.png" alt="avatar" /></a>
+        <a href="#"><img src="../../images/downarrow.png" alt="dropdown" onclick="myFunction()" id="down-arrow"
+            class="down-arrow" /></a>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="../dashboard/settings.html" class="my-profile">My Profile</a>
+          <a href="#" class="logout">Logout</a>
+        </div>
+      </div>
+    </div>
+  </header>
+      <!-- ASIDE PART -->
+
+      <aside>
+        <div class="aside-content">
+          <a href="#">
+            <img src="../../images/ham.svg" alt="toggle-menu" class="hide-desktop" id="menu-open" /></a>
+          <div class="sidebar hide-mobile show-desktop">
+            <div>
+              <a href="#">
+                <img src="../../images/ham.svg" alt="toggle-menu" class="exit hide-desktop" id="exit" /></a>
+              <a href="../index.html">
+                <img src="../../images/dashboard-logo.png" class="logo" alt="Ayrem Logo" /></a>
+            </div>
+      
+            <!-- links/ dropdown content -->
+            <ul class="links">
+              <li class="activelink">
+                <a href="../../pages/dashboard/dashboard.html" id="dashboard-btn" class="dashboard">
+                  Dashboard</a>
+              </li>
+              <li>
+                <a href="../../pages/dashboard/referral.html" id="referral-btn" class="refferal">Referrals</a>
+              </li>
+              <li>
+                <a href="../../pages/dashboard/settings.html" id="setting-btn" class="setting">Setting</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+      <!-- ASIDE PART -->
+
+      <!-- MAIN PART -->
+      <main>
+        <!-- DISPLAY ALL THE TRANSACTION MADE BY USER -->
+        <section class="offer">
+          <div class="breadcrumb">
+            <img src="../../images/breadcrumb.png" alt="">
+            <p onclick="goBack()">Back </p>
+          </div>
+          <div class="content">
+            <!-- FIRST CONTENT ON THE PAGE -->
+            <div class="info">
+              <p class="heading">
+                Your Card Information
+              </p>
+              <p class="note">
+                Your’e almost there, Please upload a clear picture of all your
+                cards.
+              </p>
+            </div>
+            <!-- UPLOAD INFORMATIONS OF CARDS TO BE SOLD-->
+            <form class="card-upload-wrapper">
+              <!-- UPLOAD CARD DIV TO BE REPEATED BASED ON THE NUMBER OF CARDS SELECTED -->
+              <div id="cardUpload">
+                <p>Upload your cards</p>
+                <div class="upload-img-wrapper">
+                  <div class="upload-img">
+                    <input
+                      type="file"
+                      multiple
+                      id="image"
+                      style="opacity: 0; position: absolute;"
+                    />
+                    <img src="../../images/upload.png" alt="" />
+                    <p>Click to upload card image</p>
+                  </div>
+                  <p>
+                    Multiple cards can be uploaded at once
+                  </p>
+                </div>
+              </div>
+
+              <!-- UPLOAD CARD DIV TO BE REPEATED BASED ON THE NUMBER OF CARDS SELECTED -->
+              <div id="selectedCard">
+               
+                <div id="addMorePix" class="hidecard">
+                  <input
+                    type="file"
+                    multiple
+                    id="addMore"
+                    style="opacity: 0; position: absolute;"
+                    width="150px"
+                  />+ Upload another giftcard
+                </div>
+                <div id="error" class="hidecard"></div>
+                
+              </div>
+              <!-- <p>Multiple cards can be uploaded at once</p> -->
+
+              <!-- ENTER CARD CODE FOR EACH CARDS -->
+              <div class="card-code">
+                <p>
+                  If your think your card is not clear enough , Please enter the
+                  16 digit code for your cards
+                </p>
+                <input type="checkbox" name="cardCode" id="cardCode" />
+                <span>Enter code for my cards</span>
+              </div>
+              <div id="uploadEcode"></div>
+              <!-- <div id="uploadEcode" style="display:none;">
+                <div class="upload-ecode">
+                  <p class="cardNumber">Card code 1</p>
+                  <input type="text" placeholder="Enter card code" />
+                </div>
+              </div> -->
+
+              <!-- ENTER CARD CODE FOR EACH CARDS ENDS -->
+              <!-- CARD RECEIPT UPLOAD SECTION -->
+              <div>
+                <div class="card-code" style="margin: 0;">
+                  <p>
+                    If your think your card is not clear enough , Please enter
+                    the 16 digit code for your cards
+                  </p>
+                </div>
+                <div class="card-receipt" style="margin: 0;">
+                  <input
+                    type="checkbox"
+                    name="cardReceipt"
+                    id="cardReceipt"
+                    onclick="showReceipt()"
+                  />
+                  <span>I have receipts for this card</span>
+                </div>
+              </div>
+              <div id="uploadReceipt" style="display: none;">
+                <p class="hideP">Upload your Receipt</p>
+                <div class="upload-receipt">
+                  <input
+                    type="file"
+                    id="receipt"
+                    style="opacity: 0; position: absolute;"
+                  />
+                  <img src="../../images/upload.png" alt="" />
+                  <p>Click to upload receipt</p>
+                </div>
+                <div id="selectedReceipt"></div>
+              </div>
+
+              <!-- CARD RECEIPT UPLOAD SECTION END -->
+
+              <div class="button-wrapper">
+                <a href="payment-info.html" class="button"
+                  >Continue to payment <span> &#8594;</span></a
+                >
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+      <!-- MAIN PART -->
+    </div>
+ <script src="../../js/cards.js"></script>
+    <script src="../../js/cardupload.js"></script>
+    <script src="../../js/dashboard.js"></script>
+   
+  </body>
+</html>

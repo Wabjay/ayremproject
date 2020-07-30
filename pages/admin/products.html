@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="dashboard.css" />
+    <link rel="stylesheet" href="transaction.css" />
+    <title>Products</title>
+    <link rel="shortcut icon" href="../../images/favicon.png" type="image/x-icon">
+  </head>
+  <body>
+    <div class="container">
+      <!--  header path-->
+    <header>
+      <div class="profile">
+        <a href="notification.html" class="notify"><img src="../../images/notification.png" alt="notification"
+            id="notification" />
+          <span id="badge">3</span>
+        </a>
+        <div class="avatar">
+          <a href="#"><img src="../../images/avatar.png" alt="avatar" /></a>
+          <a href="#"><img src="../../images/downarrow.png" alt="dropdown" onclick="myFunction()" id="down-arrow"
+              class="down-arrow" /></a>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#" class="logout">Logout</a>
+          </div>
+        </div>
+      </div>
+    </header>
+      <!-- ASIDE PART -->
+
+      <aside>
+        <div class="aside-content">
+          <a href="#">
+            <img
+              src="../../images/ham.svg"
+              alt="toggle-menu"
+              class="hide-desktop"
+              id="menu-open"
+          /></a>
+          <div class="sidebar hide-mobile show-desktop">
+            <div>
+              <a href="#">
+                <img
+                  src="../../images/ham.svg"
+                  alt="toggle-menu"
+                  class="exit hide-desktop"
+                  id="exit"
+              /></a>
+              <a href="../index.html">
+                <img
+                  src="../../images/dashboard-logo.png"
+                  class="logo"
+                  alt="Ayrem Logo"
+              /></a>
+            </div>
+
+            <!-- links/ dropdown content -->
+            <ul class="links">
+              <li>
+                <a href="index.html" id="admin-btn" class="admin"> Homepage</a>
+              </li>
+              <li>
+                <a href="customer.html" id="customer-btn" class="customer">
+                  Customers</a
+                >
+              </li>
+              <li class="activelink">
+                <a href="products.html" id="products-btn" class="products"
+                  >Products</a
+                >
+              </li>
+              <li>
+                <a
+                  href="transactions.html"
+                  id="transaction-btn"
+                  class="transaction"
+                  >Transactions</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+      <!-- ASIDE PART -->
+
+      <!-- MAIN PART -->
+      <main>
+        <!-- DISPLAY ALL THE TRANSACTION MADE BY USER -->
+        <section class="offer">
+          <div class="content">
+            <!-- FIRST CONTENT ON THE PAGE -->
+            <div class="info">
+              <p class="heading">
+                Products
+              </p>
+            </div>
+            <!-- PAYMENT OPTIONS TO CHOOSE FROM -->
+            <div class="payment-method">
+              <div>
+                <p class="method" id="dataBtn">Data</p>
+              </div>
+              <div>
+                <p class="method" id="giftBtn">Gift Card</p>
+              </div>
+              <div>
+                <p class="method" id="cryptoBtn">Crypto-Currencies</p>
+              </div>
+            </div>
+            <div id="product">
+              <div id="data-container">
+                <div>
+                  <p>DATA</p>
+                  <button id="addDataBtn">ADD NETWORK</button>
+                  <button id="viewData"> VIEW NETWORK</button>
+                </div>
+              </div>
+              <div id="giftcard-container">
+                <p>Gift Cards</p>
+                <div>
+                  <button id="addGiftBtn"> ADD GIFT CARDS</button>
+                  <button id="viewGift"> VIEW GIFT CARDS</button>
+                  <button id="viewCountry"> VIEW COUNTRIES</button>
+                </div>
+              </div>
+              <div id="coin-container">
+                <p>CRYPTO-CURRENCY</p>
+                <div>
+                  <button id="addCryptoBtn"> ADD CRYPTO-CURRENCY
+                  </button>
+                  <button id="viewCrypto"> VIEW CRYPTO-CURRENCY</button>
+                </div>
+              </div>
+            </div>
+
+            /
+            <!--  ADD PRODUCT -->
+            <div id="add" class="hide-card">
+              <div id="addData" class="hide-card">
+                <p>Add Network</p>
+                <div>
+                  <input
+                    type="text"
+                    name="network"
+                    id="network"
+                    placeholder="Network name"
+                  />
+                  <input type="file" name="logo" id="networkLogo" />
+                  <input type="button" value="submit" />
+                </div>
+              </div>
+
+              <div id="addGift" class="hide-card">
+                <p>Add Gift Cards</p>
+                <div>
+                  <input
+                    type="text"
+                    name="giftcard"
+                    id="giftcard"
+                    placeholder="Giftcard name"
+                  />
+                  <input type="file" name="logo" id="giftcardLogo" />
+                  <input type="button" value="submit" />
+                </div>
+              </div>
+
+              <div id="addCrypto" class="hide-card">
+                <p>Add Crypto-Currency</p>
+                <div>
+                  <input
+                    type="text"
+                    name="crypto"
+                    id="crypto-currency"
+                    placeholder="Crypto-Currency name"
+                  />
+                  <input type="file" name="logo" id="cryptoLogo" />
+                  <input type="button" value="submit" />
+                </div>
+              </div>
+            </div>
+
+            <!-- SHOW PRODUCTS -->
+            <div id="show" class="hide-card">
+                <div id="showData" class="hide-card">
+                    <div>
+                        <img src="../../images/airtel.png" alt="">
+                   <p>Airtel</p>
+                   <a href="">View</a>
+                    </div>
+                    <div>
+                        <img src="../../images/mtn.png" alt="">
+                        <p>Mtn</p>
+                        <a href="">View</a>
+                    </div>
+                    <div>
+                        <img src="../../images/glo.png" alt="">
+                        <p>Glo</p>
+                        <a href="">View</a>
+                    </div>
+                   
+                </div>
+                
+                <div id="showGift" class="hide-card">
+                    <p>View Gift Cards</p>
+                    <div>
+                        <img src="../../images/amazon.png" alt="">
+                        <p>amazon</p>
+                        <a href="">View</a>
+                    </div>
+                    <div>
+                        <img src="../../images/steam.png" alt="">
+                        <p>Steam</p>
+                        <a href="">View</a>
+                    </div>
+                    <div>
+                        <img src="../../images/itunes.png" alt="">
+                        <p>Itunes</p>
+                        <a href="">View</a>
+                    </div>
+                </div>
+                
+                <div id="showCrypto" class="hide-card">
+                    <p>View Crypto-Currency</p>
+                    <div>
+                        <img src="../../images/bitcoin.png" alt="">
+                        <p>Bitcoin</p>
+                        <a href="">View</a>
+                    </div>
+                    <div>
+                        <img src="../../images/etherium.png" alt="">
+                        <p>Etherium</p>
+                        <a href="">View</a>
+                    </div>
+                    <div>
+                        <img src="../../images/litecoin.png" alt="">
+                        <p>litecoin</p>
+                        <a href="">View</a>
+                    </div>
+                </div>
+            </div>
+            <div id="country" class="hide-card">
+                <div>
+                    <p>Country of Card</p>
+                    <div>
+                        <a href="">USA</a>
+                        <a href="">UK</a>
+                        <a href="">GERMANY</a>
+                    </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- MAIN PART -->
+    </div>
+
+    <script src="../../js/dashboard.js"></script>
+    <script src="../../js/admin.js"></script>
+  </body>
+</html>

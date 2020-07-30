@@ -1,0 +1,1010 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+@import url("../css/fonts.css");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+.hide-mobile,
+.hide-card {
+  display: none;
+}
+a {
+  text-decoration: none;
+  text-transform: none;
+}
+
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: 64px 1fr;
+  grid-template-areas:
+    "aside header"
+    "main main";
+}
+.aside-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: 64px 1fr;
+  grid-template-areas:
+    "aside header"
+    "aside main";
+}
+/* HEADER CSS */
+header {
+  grid-area: header;
+  padding: 16px 0;
+  padding-right: 9px;
+  border-bottom: 0.5px solid #ced9e8;
+}
+
+.profile {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#notification {
+  margin-right: 4px;
+}
+.notify {
+  position: relative;
+}
+
+#badge {
+  position: absolute;
+  top: -5px;
+  right: 5px;
+  border-radius: 50%;
+  padding: 0 3px;
+  background-color: red;
+  color: white;
+  font-size: 10px;
+}
+
+.down-arrow {
+  padding-bottom: 15px;
+  padding-left: 5px;
+}
+header li {
+  display: none;
+  list-style-type: none;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #ffffff;
+  z-index: 12;
+  min-width: 120px;
+  border: 0.5px solid #ced9e8;
+  border-radius: 4px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #9b9ea9;
+  padding: 12px 44px;
+  padding-right: 16px;
+  text-decoration: none;
+  display: block;
+}
+.show-drop-content {
+  display: block;
+  margin-right: 2px;
+}
+
+.logout {
+  background-image: url(../../images/logout.png);
+  background-position: 16px 6px;
+  background-repeat: no-repeat;
+}
+.my-profile {
+  background-image: url(../../images/my-profile.png);
+  background-position: 16px 6px;
+  background-repeat: no-repeat;
+}
+.logout:hover {
+  background-image: url(../../images/logout-active.png);
+  background-color: #f9fbfe;
+  border-radius: 4px 4px 0px 0px;
+  color: #43495c;
+}
+.my-profile:hover {
+  background-image: url(../../images/my-profile-active.png);
+  background-color: #f9fbfe;
+  border-radius: 4px 4px 0px 0px;
+  color: #43495c;
+}
+
+/* HEADER CSS */
+/* ASIDE CSS */
+aside {
+  grid-area: aside;
+  padding: 20px 24px;
+  padding-right: 0;
+  width: 240px;
+  margin-left: 0;
+  background: #ffff;
+  z-index: 10;
+  border-bottom: 0.5px solid #ced9e8;
+}
+.sidebar {
+  align-self: flex-start;
+  flex-direction: column;
+  position: fixed;
+  height: 100%;
+  width: 240px;
+  background: #ffff;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  padding-top: 20px;
+}
+.sidebar > div {
+  display: inline;
+}
+.logo {
+  margin-bottom: 28px;
+  text-align: left;
+  margin-right: 0;
+  margin-left: 16px;
+  padding-right: auto;
+}
+.exit {
+  margin-left: 24px;
+  margin-bottom: 40px;
+}
+
+aside li {
+  list-style: none;
+  width: auto;
+}
+.links {
+  font-family: Sailec-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: left;
+  margin-left: 24px;
+  margin-right: auto;
+  padding-right: 0;
+}
+.links li a {
+  color: #9b9ea9;
+  padding-left: 40px;
+}
+.links li {
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: left;
+  padding: 10px;
+}
+.links li img {
+  padding-right: 12px;
+}
+.links li:active,
+.links li:hover {
+  background: #f9fbfe;
+  border-radius: 6px 0px 0px 6px;
+}
+.links li a:active,
+.links li :hover,
+.links .activelink a {
+  color: #282f45;
+}
+
+/* ASIDE CSS */
+/* MAIN CSS */
+main {
+  grid-area: main;
+  padding-top: 32px;
+}
+.top-content {
+  margin-bottom: 75px;
+}
+h1 {
+  padding-left: 23px;
+  font-family: Sailec-Medium;
+  font-size: 24px;
+  line-height: 28px;
+  color: #282f45;
+}
+.top-content p {
+  padding-top: 8px;
+  padding-left: 23px;
+  font-family: Sailec-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #6b6f7d;
+}
+/* SLIDER CSS / CAROUSEL */
+.navigator {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 15px;
+  padding-right: 24px;
+}
+/* Slideshow container */
+.slideshow-container {
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+.mySlides img {
+  width: 100%;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  width: auto;
+  padding: 10px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Caption text */
+.text {
+  color: #0032c9;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 10%;
+  left: 10px;
+  width: 100%;
+  text-align: left;
+}
+
+/* REFERRAL PAGE STYLE */
+.referrals {
+  width: 90%;
+  max-width: 552px;
+  margin: 20px auto;
+}
+.referral-points {
+  height: 80px;
+  padding: 0 16px;
+  border: 0.5px solid #c5c9d5;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Sailec-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #6b6f7d;
+}
+
+.point {
+  font-family: Sailec-Medium;
+  font-size: 24px;
+  line-height: 28px;
+  color: #0032c9;
+}
+.referral-note {
+  font-family: Sailec-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #43495c;
+  background: #f9fbfe;
+  border-radius: 4px;
+  max-width: 366px;
+  padding: 16px;
+  margin: 29px 0 32px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.referral-code {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 12px;
+  background: #0032c9;
+  border-radius: 4px;
+  color: #ffffff;
+  font-family: Sailec-Medium;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 16px;
+}
+.referral-code a {
+  justify-self: self-end;
+  background: #0ce87f;
+  border-radius: 16px;
+  padding: 6px 19px;
+  font-family: Sailec-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+}
+.code {
+  font-size: 30px;
+  line-height: 35px;
+}
+.referral-details {
+  width: 100%;
+  border: 0.5px solid #c5c9d5;
+  margin-top: 50px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.flex {
+  display: flex;
+  margin: auto;
+  height: 48px;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto 16px;
+  font-family: Sailec-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #6b6f7d;
+}
+.flex:nth-child(even) {
+  border-top: 0.5px solid #c5c9d5;
+  border-bottom: 0.5px solid #c5c9d5;
+}
+.flex .points {
+  color: #282f45;
+}
+
+/* REFERRAL PAGE STYLE ENDS */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Second Section FOR TRANSACTIONS */
+.breadcrumb {
+  font-family: Sailec-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: left;
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin: 0 auto 24px 24px;
+  width: auto;
+  max-width: 180px;
+  background: #edf2f7;
+  text-align: center;
+}
+.breadcrumb a {
+  color: #0032c9;
+}
+.breadcrumb span {
+  padding-right: 8px;
+}
+.transaction-container h1 {
+  padding-left: 0;
+  padding-bottom: 24px;
+}
+.new-transaction {
+  display: none;
+  width: 90%;
+  margin: 0 auto;
+}
+.new-transaction p {
+  font-family: Sailec-Medium;
+  font-size: 16px;
+  line-height: 19px;
+  color: #43495c;
+  padding-bottom: 11px;
+  width: 240px;
+  margin: 0 auto;
+}
+.transaction-details {
+  width: 100%;
+  max-width: 959px;
+  background: #ffffff;
+  border: 0.5px solid #ced9e8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  height: 373px;
+  margin: 0 auto;
+}
+.transaction-details img {
+  padding-top: 112px;
+  padding-bottom: 24px;
+  width: 46px;
+  margin: 0 auto;
+}
+.transaction-details p {
+  font-family: Sailec-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: left;
+  color: #9b9ea9;
+}
+
+/* MAIN TRANSAACTIONS  */
+/* DAILY TARNSACTIONS */
+.transactions {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  max-width: 959px;
+}
+.transaction-border {
+  border: 0.5px solid #ced9e8;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.transaction-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 11px;
+}
+
+.transaction-header p {
+  font-family: Sailec-Medium;
+  font-size: 16px;
+  line-height: 19px;
+  color: #43495c;
+}
+.transaction-header a {
+  font-family: Sailec-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #0032c9;
+}
+.each-transaction {
+  border-radius: 8px;
+  padding: 16px 12px;
+  display: grid;
+  grid-template-columns: 48px auto 1fr;
+  align-items: center;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+/* ADMIN NOTIFICATION */
+.transaction-status {
+  padding: 10px 16px;
+  display: block;
+}
+.transaction-status select {
+  width: 100%;
+  height: 32px;
+  border-radius: 4px;
+  padding: 0;
+  margin: 15px auto;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.comment {
+  display: grid;
+  grid-template-columns: 1fr 100px;
+  grid-column-gap: 10px;
+}
+.comment textarea {
+  border-radius: 4px;
+  border: solid lightgray 0.5px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.destination,
+.quantity {
+  font-family: Sailec-Regular;
+  font-size: 16px;
+  line-height: 22px;
+  color: #6b6f7d;
+}
+.destination {
+  font-size: 12px;
+}
+.items div {
+  padding-left: 10px;
+}
+.comment button {
+  border-radius: 4px;
+  border: solid lightgray 0.5px;
+  padding: 0 10px;
+  color: #ffffff;
+  background: #0032c9;
+}
+
+/* notifination page */
+
+.remove-border {
+  border: none;
+}
+.status {
+  width: 170px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+.item {
+  margin-right: 8px;
+}
+.item p {
+  font-family: Sailec-Medium;
+  font-size: 14px;
+  line-height: 16px;
+  color: #282f45;
+}
+.item p:nth-child(2) {
+  font-family: Sailec-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #9b9ea9;
+  margin-top: 2px;
+}
+.items {
+  display: flex;
+  align-items: center;
+}
+.each-transaction > p {
+  justify-self: center;
+}
+
+.verify {
+  color: #15777b;
+  background: #edfcfd;
+  align-self: center;
+}
+.recieve {
+  color: #6a2776;
+  background: #f9eafc;
+  align-self: center;
+}
+.sent {
+  color: #117b47;
+  background: #e5fdf2;
+  align-self: center;
+}
+.verify,
+.sent,
+.recieve {
+  font-family: Sailec-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  /* line-height: 16px; */
+  padding: 5px 8px;
+  text-align: center;
+  border-radius: 24px;
+  margin: auto;
+  margin-left: 0;
+}
+.price {
+  font-family: Sailec-Medium;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  justify-self: self-start;
+  color: #08ad5e;
+}
+/* NOTIFICATION AND TRANSACTION CONFIRMATION PAGE */
+.status-box {
+  display: flex;
+  justify-content: space-between;
+}
+.status-box input {
+  padding: 10px;
+}
+
+/* TRANSACTION-DETAILS PAGE TO BE POP UP FROM BUTTON CLICK */
+
+form option {
+  width: 100%;
+  height: 48px;
+  color: #6b6f7d;
+  padding: 13px auto 13px 10px;
+  padding-left: 10px;
+  border: #e5e5e5 0.5px solid;
+  background: #ffffff;
+  box-sizing: border-box;
+  /* border-radius: 4px; */
+}
+
+.details-popup {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background: linear-gradient(
+    180deg,
+    rgba(155, 158, 169, 0.1) 1.42%,
+    rgba(155, 158, 169, 0.1) 51.91%,
+    rgba(155, 158, 169, 0.1) 100%
+  );
+}
+.details-popup > div {
+  max-width: 416px;
+  margin: auto;
+  padding: 4px 0;
+  background: #ffffff;
+  border: 1px solid #c5c9d5;
+  box-sizing: border-box;
+  border-radius: 8px;
+  transform: translate(-50% -50%);
+  -webkit-transform: translate(-50% -50%);
+  -moz-transform: translate(-50% -50%);
+  -ms-transform: translate(-50% -50%);
+  -o-transform: translate(-50% -50%);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.5s;
+}
+.details-popup .button-wrapper {
+  box-sizing: border-box;
+  width: 228px;
+  margin: 0 auto;
+  margin-top: 95px;
+  margin-bottom: 30px;
+}
+.inner-popup {
+  padding: 0;
+  margin: 0;
+  padding: 25px 24px;
+  border-bottom: 0.5px solid #ced9e8;
+}
+
+.inner-popup .each-transaction {
+  border-radius: 8px;
+  padding: 16px 12px;
+  display: grid;
+  grid-template-columns: 48px auto 1fr;
+  align-items: center;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+.inner-popup .transaction-border {
+  margin-bottom: 16px;
+}
+
+.inner-popup .price {
+  color: #08ad5e;
+}
+.popup-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.inner-popup .bold {
+  padding-top: 0;
+  margin-bottom: 17px;
+}
+#transaction-status {
+  text-align: center;
+}
+
+.close-btn {
+  justify-self: self-end;
+}
+
+/* END OF TRANSACTION DETAILS RULES */
+
+/* MAIN CSS */
+@media only screen and (min-width: 351px) {
+  #badge {
+    right: 30px;
+  }
+  #notification {
+    margin-right: 32px;
+  }
+
+  .slider ul .banner {
+    width: 302px;
+  }
+  .each-transaction {
+    border-radius: 8px;
+    padding: 16px 24px;
+    display: grid;
+    grid-template-columns: 52px auto 1fr;
+  }
+}
+.each-transaction > p {
+  justify-self: self-end;
+}
+
+@media only screen and (min-width: 500px) {
+  .each-transaction {
+    grid-template-columns: 70px 240px 1fr;
+  }
+}
+@media only screen and (min-width: 750px) {
+  .remove-border {
+    border: none;
+  }
+  .status {
+    width: 170px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+  .item {
+    margin-right: 8px;
+  }
+  .item p {
+    font-family: Sailec-Medium;
+    font-size: 14px;
+    line-height: 16px;
+    color: #282f45;
+  }
+  .item p:nth-child(2) {
+    font-family: Sailec-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #9b9ea9;
+    margin-top: 2px;
+  }
+  .items {
+    display: flex;
+    align-items: center;
+  }
+  .show-desktop {
+    display: block;
+  }
+  .hide-desktop {
+    display: none;
+  }
+  .hide-mobile {
+    display: block;
+  }
+  .container {
+    grid-template-rows: 72px 1fr;
+    grid-template-areas:
+      "aside header"
+      "aside main";
+  }
+
+  /* HEADER PART */
+  header {
+    grid-area: header;
+    background: #ffffff;
+    border-bottom: 0.5px solid #ced9e8;
+    box-shadow: 0px 1px 2px #c5c9d5;
+  }
+  .profile {
+    width: 108px;
+    margin: 0 24px 0 auto;
+  }
+
+  /* ASIDE PART */
+  aside {
+    grid-area: aside;
+    padding: 23px 0 0;
+    height: 100%;
+    background: #ffffff;
+    z-index: 3;
+    box-shadow: 0px 1px 2px #c5c9d5;
+  }
+  .sidebar {
+    align-self: flex-start;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+    left: 0;
+    top: 0;
+  }
+  #menu-open {
+    display: none;
+  }
+  .logo {
+    margin-left: 24px;
+    margin-bottom: 68px;
+    text-align: left;
+  }
+
+  /* MAIN PART */
+  main {
+    display: relative;
+    grid-area: main;
+    width: 100%;
+  }
+  /* FOR REFERRAL PAGE */
+  .referrals {
+    width: 90%;
+    max-width: 552px;
+    margin: 115px auto;
+  }
+
+  .top-content {
+    margin-bottom: 40px;
+  }
+  .slider {
+    padding-top: 40px;
+  }
+  .slider ul .banner {
+    width: 100%;
+  }
+  .details-popup > div {
+    margin-top: 100px;
+  }
+}
+@media only screen and (min-width: 850px) {
+  
+}
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  /* ASIDE PART */
+  aside {
+    padding-left: 0;
+  }
+
+  /* MAIN PART */
+  .breadcrumb {
+    margin-left: 49px;
+  }
+
+  .navigator {
+    display: none;
+  }
+  .slideshow-container {
+    width: 90%;
+    max-width: 960px;
+    margin-top: 20px;
+    margin-left: 24px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .mySlides img {
+    width: 100%;
+    padding-right: 20px;
+  }
+
+  h1,
+  .top-content p {
+    padding-left: 49px;
+  }
+  .transactions,
+  .transaction-details {
+    margin-left: 24px;
+  }
+  .new-transaction,
+  .each-transaction {
+    width: 100%;
+  }
+  .price {
+    font-size: 24px;
+  }
+  .details-popup .button-wrapper {
+    margin: 0 auto;
+    margin-top: 95px;
+    margin-bottom: 30px;
+  }
+  .transaction-status {
+    padding: 10px 16px;
+    display: grid;
+    grid-template-columns: 1fr 150px 1fr;
+    grid-column-gap: 10px;
+    align-content: center;
+  }
+  .transaction-status select {
+    width: 100%;
+    height: 32px;
+    border-radius: 4px;
+    align-self: center;
+    padding: 0;
+    margin: 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+  }
+  .comment {
+    display: grid;
+    grid-template-columns: 1fr 100px;
+  }
+  .comment textarea {
+    border-radius: 4px;
+    border: solid lightgray 0.5px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+  .destination,
+  .quantity {
+    font-family: Sailec-Regular;
+    font-size: 16px;
+    line-height: 22px;
+    color: #6b6f7d;
+  }
+  .destination {
+    font-size: 12px;
+  }
+  .items div {
+    padding-left: 10px;
+  }
+
+  /* notifination page */
+}
+
+@media only screen and (min-width: 1440px) {
+  .slideshow-container {
+    margin-left: 49px;
+  }
+
+  .transactions,
+  .transaction-details {
+    margin-left: 49px;
+  }
+}

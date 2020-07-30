@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ayrem Password Recover</title>
+    <link
+      rel="shortcut icon"
+      href="../../images/favicon.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="../css/sign.css" />
+    <style>
+      .success {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 8px;
+        background: #e5fdf2;
+        border: 0.5px solid #08ad5e;
+        box-sizing: border-box;
+        border-radius: 8px;
+        padding: 24px;
+        margin-bottom: 24px;
+      }
+      .pop {
+        display: none;
+      }
+      .title {
+        font-family: Sailec-Medium;
+        font-size: 14px;
+        line-height: 16px;
+        justify-self: self-start;
+        color: #117b47;
+      }
+      .cancel {
+        font-size: 10px;
+        justify-self: self-end;
+        color: #117b47;
+        border: none;
+        background: none;
+      }
+      .success p:nth-child(3) {
+        grid-column: 1/3;
+        font-size: 14px;
+        font-family: Sailec-Regular;
+        font-style: normal;
+        font-weight: normal;
+        color: #117b47;
+        line-height: 19px;
+      }
+
+      form input,
+      .input-container {
+        max-width: 641px;
+      }
+      @media only screen and (min-width: 750px) {
+        form div {
+          grid-column: 1/3;
+        }
+      }
+      @media only screen and (min-width: 1024px) {
+        main {
+          width: 552px;
+          margin: auto;
+          margin-bottom: 94px;
+        }
+        header p {
+          font-size: 30px;
+          line-height: 44px;
+        }
+        section {
+          width: 100%;
+          box-sizing: border-box;
+        }
+        form {
+          width: 100%;
+          max-width: 552px;
+        }
+        form div {
+          max-width: 504px;
+          grid-column: 1/3;
+          margin: 0;
+          text-align: left;
+        }
+        form input {
+          width: 100%;
+          max-width: 504px;
+        }
+        .input {
+          max-width: 504px;
+          margin-left: 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html"
+        ><img src="../images/logo_white.png" alt="" class="logo"
+      /></a>
+      <p>
+        Reset your password
+      </p>
+    </header>
+    <main>
+      <section>
+        <!-- Hide and Display Successful pop up with .pop -->
+        <div class="success pop" id="success">
+          <p class="title">Success</p>
+          <button class="cancel" onclick="myFunction()">X</button>
+          <p>
+            Your login reset request has been sent! Please cleack your email for
+            instructions on completing the change.
+          </p>
+        </div>
+        <p class="header">Get password reset link</p>
+
+        <form autocomplete="off" id="form">
+          <div class="form-control">
+            <label for="email">Email address</label>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              value=""
+              placeholder="Enter your email address"
+            /><small>This is an error message</small>
+          </div>
+          <input type="submit" value="Send reset link" class="submit" />
+        </form>
+        <p class="signin long">
+          <a href="login.html"><span>&#8592; </span> Back to login</a>
+        </p>
+      </section>
+    </main>
+
+    <script>
+      const form = document.getElementById("form");
+      const email = document.getElementById("email");
+      const success = document.getElementById("success");
+
+      form.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        checkInputs();
+      });
+      function checkInputs() {
+        // get the values from the input
+        const emailValue = email.value.trim();
+
+        if (emailValue === "") {
+          setErrorFor(email, "Email cannot be empty");
+        } else if (!isEmail(emailValue)) {
+          setErrorFor(email, "Please enter a correct email");
+        } else {
+          setSuccessFor(email);
+        }
+      }
+
+      function setErrorFor(input, message) {
+        const formControl = input.parentElement; //the input parent element form-control class.
+        const small = formControl.querySelector("small");
+
+        // add error message inside the paragraph for error
+        small.innerText = message;
+
+        //add error class
+        formControl.className = "form-control error";
+      }
+
+      function setSuccessFor(input) {
+        success.classList.remove("pop");
+      }
+
+      //MAIL FORMAT
+      function isEmail(email) {
+        return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../../css/dashboard.css" />
+    <link rel="stylesheet" href="../../css/giftcards.css" />
+    <title>Amazon Card</title>
+    <link rel="shortcut icon" href="../../images/favicon.png" type="image/x-icon">
+  </head>
+  <body>
+    <div class="container">
+      <!--  header path-->
+    <header>
+      <div class="profile">
+        <a href="../dashboard/notification.html" class="notify"><img src="../../images/notification.png" alt="notification"
+            id="notification" />
+          <span id="badge">3</span></a></a>
+        <div class="avatar">
+          <a href="#"><img src="../../images/avatar.png" alt="avatar" /></a>
+          <a href="#"><img src="../../images/downarrow.png" alt="dropdown" onclick="myFunction()" id="down-arrow"
+              class="down-arrow" /></a>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="../dashboard/settings.html" class="my-profile">My Profile</a>
+            <a href="#" class="logout">Logout</a>
+          </div>
+        </div>
+      </div>
+    </header>
+      <!-- ASIDE PART -->
+
+      <aside>
+        <div class="aside-content">
+          <a href="#">
+            <img src="../../images/ham.svg" alt="toggle-menu" class="hide-desktop" id="menu-open" /></a>
+          <div class="sidebar hide-mobile show-desktop">
+            <div>
+              <a href="#">
+                <img src="../../images/ham.svg" alt="toggle-menu" class="exit hide-desktop" id="exit" /></a>
+              <a href="../index.html">
+                <img src="../../images/dashboard-logo.png" class="logo" alt="Ayrem Logo" /></a>
+            </div>
+      
+            <!-- links/ dropdown content -->
+            <ul class="links">
+              <li class="activelink">
+                <a href="../../pages/dashboard/dashboard.html" id="dashboard-btn" class="dashboard">
+                  Dashboard</a>
+              </li>
+              <li>
+                <a href="../../pages/dashboard/referral.html" id="referral-btn" class="refferal">Referrals</a>
+              </li>
+              <li>
+                <a href="../../pages/dashboard/settings.html" id="setting-btn" class="setting">Setting</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+      <!-- ASIDE PART -->
+
+      <!-- MAIN PART -->
+      <main>
+        <!-- DISPLAY ALL THE TRANSACTION MADE BY USER -->
+        <section class="offer">
+        <div class="breadcrumb" >
+           <img src="../../images/breadcrumb.png" alt="">
+            <p onclick="goBack()">Back </p>
+        </div>
+          <div class="content">
+            <!-- FIRST CONTENT ON THE PAGE -->
+            <div class="info">
+              <p class="heading">
+                Good job, Let’s help you know your order to determine your
+                price.
+              </p>
+            </div>
+            <!-- FORM TO FILL TO BUY DATA -->
+            <form>
+            
+              <div>
+                <input type="text" name="cardType" id="cardType" value="Amazon" style="display: none;">
+              </div>
+
+
+              <div>
+                <label for="cardRange">Select your card value range</label>
+                <select name="cardRange" id="cardRange" placeholder=" ">
+                  <option value="">Select card value</option>
+                  <option value="5-49">$5-$49</option>
+                  <option value="50-100">$50-$100</option>
+                  <option value="101-200">$101 - $200</option>
+                  <option value="201-500">$201 - $500</option>
+                </select>
+              </div>
+              <div>
+                <label for="cardCountry">Card Country</label>
+                <select name="cardCountry" id="cardCountry" placeholder=" ">
+                  <option value="">Select card country</option>
+                  <option value="USA">United States</option>
+                  <option value="GERMANY">Germany</option>
+                  <option value="U.K">United Kingdom</option>
+                  <option value="SPAIN"> Spain</option>
+                  <option value="BRAZIL">Brazil</option>
+                </select>
+              </div>
+              <div>
+                <label for="paymentOption">Mode of Giftcard payment</label>
+                <select name="paymentOption" id="paymentOption" placeholder=" ">
+                  <option value="cash">Cash</option>
+                  <option value="debit card"> Debit Card</option>
+                  <option value="reciept">Activation reciept/ No payment</option>
+                </select>
+              </div>
+              <!-- DISPLAY CARD WITH THE INFORMATION -->
+              <div class="hidecard">
+                <div class="card-details-wrapper">
+                  <div class="card-details">
+                    <p class="card-type"></p>
+                    <div class="card-info">
+                      <p class="card-value"></p>
+                      <p class="country"></p>
+                      <div class="card-price-wrapper">
+                        <p class="card-price">N380 </p>
+                        <p>PER DOLLAR</p>
+                      </div>
+                    </div>
+                    <p class="debit">Debit</p>
+                  </div>
+                </div>
+                <div>
+                  <label for="numberOfCard">Number of cards</label>
+                  <select name="numberOfCard" id="numberOfCard" placeholder=" ">
+                    
+                    <option value="">--Select--</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                  </select>
+                </div>
+              </div>
+              <!-- END DISPLAY CARD -->
+              <div id="append">
+                <!-- <div class="cardAmount">
+                  <label for="cardAmount">Amount on card</label>
+                  <select name="cardAmount" class="cardAmount1" placeholder=" ">
+                    <option value="">--Select--</option>
+                    <option value="50">$50</option>
+                    <option value="100">$100</option>
+                    <option value="200">$200</option>
+                    <option value="300">$300</option>
+                    <option value="500">$500</option>
+                    <option value="1000">$1000</option>
+                  </select> 
+                </div>-->
+              </div>
+              
+            <div class="totalPrice">
+            <p id="totalPrice">Amount you will recieve</p>
+            </div>
+            <p class="sum">For $50 X 2 Amazon @ N330/Dollar</p>
+              
+              <div class="button-wrapper">
+                <a href="amazonupload.html" onclick="result()" class="button">Proceed to card upload <span> &#8594;</span></a>
+              </div>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+      <!-- MAIN PART -->
+    </div>
+
+    <script src="../../js/dashboard.js"></script>
+      <script src="../../js/amazoncard.js"></script>
+      <!-- <script src="../../js/cards.js"></script> -->
+  </body>
+</html>

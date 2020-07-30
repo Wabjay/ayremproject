@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../../css/dashboard.css" />
+    <link rel="stylesheet" href="../../css/transaction.css" />
+    <title>Buy Data</title>
+    <link rel="shortcut icon" href="../../images/favicon.png" type="image/x-icon">
+    <style>
+      @media only screen and (min-width: 1440px) {
+        .button-wrapper {
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!--  header path-->
+    <header>
+      <div class="profile">
+        <a href="../dashboard/notification.html" class="notify"><img src="../../images/notification.png" alt="notification"
+            id="notification" />
+          <span id="badge">3</span></a></a>
+        <div class="avatar">
+          <a href="#"><img src="../../images/avatar.png" alt="avatar" /></a>
+          <a href="#"><img src="../../images/downarrow.png" alt="dropdown" onclick="myFunction()" id="down-arrow"
+              class="down-arrow" /></a>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="../dashboard/settings.html" class="my-profile">My Profile</a>
+            <a href="#" class="logout">Logout</a>
+          </div>
+        </div>
+      </div>
+    </header>
+      <!-- ASIDE PART -->
+
+    <aside>
+      <div class="aside-content">
+        <a href="#">
+          <img src="../../images/ham.svg" alt="toggle-menu" class="hide-desktop" id="menu-open" /></a>
+        <div class="sidebar hide-mobile show-desktop">
+          <div>
+            <a href="#">
+              <img src="../../images/ham.svg" alt="toggle-menu" class="exit hide-desktop" id="exit" /></a>
+            <a href="../index.html">
+              <img src="../../images/dashboard-logo.png" class="logo" alt="Ayrem Logo" /></a>
+          </div>
+    
+          <!-- links/ dropdown content -->
+          <ul class="links">
+            <li class="activelink">
+              <a href="../../pages/dashboard/dashboard.html" id="dashboard-btn" class="dashboard">
+                Dashboard</a>
+            </li>
+            <li>
+              <a href="../../pages/dashboard/referral.html" id="referral-btn" class="refferal">Referrals</a>
+            </li>
+            <li>
+              <a href="../../pages/dashboard/settings.html" id="setting-btn" class="setting">Setting</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+      <!-- ASIDE PART -->
+
+      <!-- MAIN PART -->
+      <main>
+        <!-- DISPLAY ALL THE TRANSACTION MADE BY USER -->
+        <section class="offer">
+  <div class="breadcrumb">
+    <img src="../../images/breadcrumb.png" alt="">
+    <p onclick="goBack()">Back to Dashboard </p>
+  </div>
+          <div class="content">
+            <!-- FIRST CONTENT ON THE PAGE -->
+            <div class="info">
+              <p class="heading">
+                Hi, Let’s know the data plan suitable for you.
+              </p>
+              <p class="note">
+                Fill in your data details so we can process your order
+              </p>
+            </div>
+            <!-- FORM TO FILL TO BUY DATA -->
+            <form>
+              <div>
+                <label for="network">Data network name</label>
+                <select name="network" id="network" placeholder="">
+                  <option value=""></option>
+                  <option value="Airtel">Airtel network</option>
+                  <option value="Etisalat">Etisalat network</option>
+                  <option value="Glo">Glo network</option>
+                  <option value="Mtn">Mtn network</option>
+                </select>
+              </div>
+              <div>
+                <label for="plan">Data Network plan</label>
+                <select name="plan" id="plan" placeholder="">
+                  <option value=""></option>
+                  <option value="Airtel 1gb"> Airtel 1 Gig ----- N500</option>
+                  <option value="Airtel 2gb"> Airtel 2 Gig ----- N1000</option>
+                  <option value="Airtel 3gb"> Airtel 3 Gig ----- N2000</option>
+                  <option value="Airtel 4gb">Airtel 4 Gig ----- N3000</option>
+                </select>
+              </div>
+              <div>
+                <label for="acct_num">Your Phone number</label>
+                <input
+                  type="tel"
+                  name="Phone"
+                  id="phone"
+                  value=""
+                  placeholder="Enter your Phone number"
+                />
+                <p>
+                  Your data plan will be sent to this phone number after your
+                  payment has been confirmed.
+                </p>
+              </div>
+              <div class="button-wrapper">
+                <a href="data-summary.html" class="button"
+                  >Go to Summary <span> &#8594;</span>
+                  </a
+                >
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+      <!-- MAIN PART -->
+    </div>
+
+    <script src="../../js/dashboard.js"></script>
+  </body>
+</html>

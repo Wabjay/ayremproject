@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../../css/dashboard.css" />
+    <link rel="stylesheet" href="../../css/transaction.css" />
+    <title>Transaction Summary</title>
+    <link rel="shortcut icon" href="../../images/favicon.png" type="image/x-icon">
+    <style>
+      .button-wrapper {
+        margin-top: 97px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!--  header path-->
+      <header>
+        <div class="profile">
+          <a href="../dashboard/notification.html" class="notify"><img src="../../images/notification.png" alt="notification"
+              id="notification" />
+            <span id="badge">3</span></a></a>
+          <div class="avatar">
+            <a href="#"><img src="../../images/avatar.png" alt="avatar" /></a>
+            <a href="#"><img src="../../images/downarrow.png" alt="dropdown" onclick="myFunction()" id="down-arrow"
+                class="down-arrow" /></a>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="../dashboard/settings.html" class="my-profile">My Profile</a>
+              <a href="#" class="logout">Logout</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- ASIDE PART -->
+
+      <aside>
+        <div class="aside-content">
+          <a href="#">
+            <img src="../../images/ham.svg" alt="toggle-menu" class="hide-desktop" id="menu-open" /></a>
+          <div class="sidebar hide-mobile show-desktop">
+            <div>
+              <a href="#">
+                <img src="../../images/ham.svg" alt="toggle-menu" class="exit hide-desktop" id="exit" /></a>
+              <a href="../index.html">
+                <img src="../../images/dashboard-logo.png" class="logo" alt="Ayrem Logo" /></a>
+            </div>
+      
+            <!-- links/ dropdown content -->
+            <ul class="links">
+              <li class="activelink">
+                <a href="../../pages/dashboard/dashboard.html" id="dashboard-btn" class="dashboard">
+                  Dashboard</a>
+              </li>
+              <li>
+                <a href="../../pages/dashboard/referral.html" id="referral-btn" class="refferal">Referrals</a>
+              </li>
+              <li>
+                <a href="../../pages/dashboard/settings.html" id="setting-btn" class="setting">Setting</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+      <!-- ASIDE PART -->
+
+      <!-- MAIN PART -->
+      <main>
+        <!-- DISPLAY ALL THE TRANSACTION MADE BY USER -->
+        <section class="offer">
+          <div class="breadcrumb">
+            <img src="../../images/breadcrumb.png" alt="">
+            <p onclick="goBack()">Back </p>
+          </div>
+          <section class="transaction-summary">
+            <div class="inner-popup">
+              <div class="popup-split">
+                <p>Transaction Details</p>
+               
+              </div>
+              <div class="transaction-border">
+                <div class="each-transaction">
+                  <img src="../../images/amazon.png" alt="" />
+                  <div class="item">
+                    <p>$50 X 2 cards</p>
+                    <p>12th Sep, 2019</p>
+                  </div>
+                  <p class="price">N800,000</p>
+                </div>
+              </div>
+              <div class="line"></div>
+            </div>
+            <div class="inner-popup">
+              <p class="bold">ORDER DETAILS</p>
+              <div class="popup-split">
+                <p class="order-info">Order Number</p>
+                <p class="order-details">#11011101</p>
+              </div>
+              <div class="popup-split">
+                <p class="order-info">Your Phone Number</p>
+                <p class="order-details">08101223411</p>
+              </div>
+              <div class="popup-split">
+                <p class="order-info">Date</p>
+                <p class="order-details">27th Sep, 2019</p>
+              </div>
+              <div class="popup-split">
+                <p class="order-info">Time</p>
+                <p class="order-details">09 : 30pm</p>
+              </div>
+            </div>
+          
+            <div class="inner-popup">
+              <p class="bold">PAYMENT DETAILS</p>
+              <div class="popup-split">
+                <p class="order-info">Bank Name</p>
+                <p class="order-details">GT Bank</p>
+              </div>
+              <div class="popup-split">
+                <p class="order-info">Account Name</p>
+                <p class="order-details">Olagbemi Fatai</p>
+              </div>
+              <div class="popup-split">
+                <p class="order-info">Account Number</p>
+                <p class="order-details">002919910</p>
+              </div>
+            </div>
+            <div class="inner-popup">
+              <div class="popup-split">
+                <p class="order-info">You will recieve</p>
+                <p class="order-details price">N8,000</p>
+              </div>
+          
+            </div>
+          <div class="button-wrapper">
+              <a href="payment-method.html" class="button"
+                >Place order</a
+              >
+            </div>
+          
+          
+          
+          
+          </section>
+            
+          </div>
+        </section>
+      </main>
+      <!-- MAIN PART -->
+    </div>
+
+    <script src="../../js/dashboard.js"></script>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../../css/dashboard.css" />
+    <link rel="stylesheet" href="../../css/transaction.css" />
+    <title>Dashboard</title>
+    <link rel="shortcut icon" href="../../images/favicon.png" type="image/x-icon">
+  </head>
+  <body>
+    <div class="container">
+      <!--  header path-->
+      <header>
+        <div class="profile">
+          <a href="../dashboard/notification.html" class="notify"><img src="../../images/notification.png" alt="notification"
+              id="notification" />
+            <span id="badge">3</span></a></a>
+          <div class="avatar">
+            <a href="#"><img src="../../images/avatar.png" alt="avatar" /></a>
+            <a href="#"><img src="../../images/downarrow.png" alt="dropdown" onclick="myFunction()" id="down-arrow"
+                class="down-arrow" /></a>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="../dashboard/settings.html" class="my-profile">My Profile</a>
+              <a href="#" class="logout">Logout</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- ASIDE PART -->
+
+      <aside>
+        <div class="aside-content">
+          <a href="#">
+            <img
+              src="../../images/ham.svg"
+              alt="toggle-menu"
+              class="hide-desktop"
+              id="menu-open"
+          /></a>
+          <div class="sidebar hide-mobile show-desktop">
+            <div>
+              <a href="#">
+                <img
+                  src="../../images/ham.svg"
+                  alt="toggle-menu"
+                  class="exit hide-desktop"
+                  id="exit"
+              /></a>
+              <a href="../index.html">
+                <img
+                  src="../../images/dashboard-logo.png"
+                  class="logo"
+                  alt="Ayrem Logo"
+              /></a>
+            </div>
+
+            <!-- links/ dropdown content -->
+            <ul class="links">
+              <li>
+                <a
+                  href="../../pages/dashboard/dashboard.html"
+                  id="dashboard-btn"
+                  class="dashboard"
+                >
+                  Dashboard</a
+                >
+              </li>
+              <li class="activelink">
+                <a href="../../pages/dashboard/referral.html" id="referral-btn"
+                  >Referrals</a
+                >
+              </li>
+              <li>
+                <a href="../../pages/dashboard/settings.html" id="setting-btn"
+                  >Setting</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+      <!-- ASIDE PART -->
+
+      <!-- MAIN PART -->
+      <main>
+        <section class="offer">
+          <div class="referrals">
+            <div class="referral-points">
+              <p>Total point earned</p>
+              <p class="point">50</p>
+            </div>
+            <div class="referral-note">
+              Earn points that can be redeemed for cash when you invite new
+              users and they trade with ayrem
+            </div>
+            <div class="referral-code">
+              <p>referral code</p>
+              <a href="">share link</a>
+              <p class="code">ABEUUQQ</p>
+            </div>
+            <div class="referral-details">
+              <div class="flex">
+                <p>Points per refferal</p>
+                <p class="points">10 Points</p>
+              </div>
+              <div class="flex">
+                <p>Number of signups</p>
+                <p class="points">6</p>
+              </div>
+              <div class="flex">
+                <p>Number of signups that trade</p>
+                <p class="points">15</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- MAIN PART -->
+    </div>
+
+    <script src="../../js/dashboard.js"></script>
+    <script src="../../js/detail-popup.js"></script>
+    <!-- MODAL POPUP FOR THE TRANSACTION DETAILS -->
+    <!-- <script>
+    const details = document.querySelector(".details-popup");
+    const closeBtn = document.querySelector(".close-btn");
+    const popBtn = document.querySelector("#pop");
+    
+    popBtn.onclick = function() {
+    details.style.display = "block";
+    };
+    closeBtn.onclick = function() {
+    details.style.display = "none";
+    };
+    window.onclick = function(e) {
+    if (e.target == details) {
+    details.style.display = "none";
+    }
+    };
+    </script> -->
+  </body>
+</html>
