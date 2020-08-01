@@ -7,8 +7,8 @@
 
 p {
   width: 90%;
-  max-width: 560px;
-  font-size: 20px;
+  /* max-width: 560px; */
+  font-size: 16px;
   margin-top: 10px;
   font-family: Sailec-Bold;
   font-style: normal;
@@ -112,7 +112,7 @@ main {
   font-family: Sailec-Regular;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+
   line-height: 36px;
   color: #fff;
 }
@@ -173,7 +173,7 @@ main {
   font-family: Sailec-Regular;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+
   line-height: 36px;
   color: #43495c;
   padding-top: 48px;
@@ -297,6 +297,7 @@ button {
     margin: 0;
     padding-top: 28px;
     padding-bottom: 40px;
+    font-size: 20px;
     font-family: Sailec-Regular;
     line-height: 36px;
   }
@@ -379,10 +380,14 @@ button {
   }
   .three p {
     width: 80%;
+    font-size: 20px;
     max-width: 700px;
   }
   .four {
     margin-bottom: 50px;
+  }
+  .four ul li {
+    font-size: 20px;
   }
   .four .split {
     grid-gap: 160px;

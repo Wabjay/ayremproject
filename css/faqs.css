@@ -195,7 +195,6 @@ main {
 
 .panel,
 .suggestion .panel {
-  padding: 5px;
   max-height: 0;
   overflow: hidden;
   position: relative;
@@ -215,6 +214,7 @@ main {
   font-size: 16px;
   line-height: 22px;
   color: #6b6f7d;
+  padding: 5px;
   padding-bottom: 16px;
 }
 .suggestion .panel {
