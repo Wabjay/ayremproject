@@ -35,7 +35,7 @@ aside {
   grid-auto-rows: 1fr 1fr;
 }
 .banner p {
-  height: 35px;
+  /* height: 35px; */
   -ms-grid-column-align: center;
   justify-self: center;
   -ms-flex-item-align: self-end;
@@ -151,6 +151,9 @@ main {
   padding-top: 0;
   border-bottom: 0.5px solid #ced9e8;
 }
+.suggestion .question-container {
+  padding: 0;
+}
 .question,
 .suggestion .question {
   display: flex;
@@ -167,13 +170,15 @@ main {
 }
 .suggestion .question {
   width: 95%;
+}
+.suggestion .question-container {
   margin: 0 auto;
 }
 .question p,
 .suggestion .question p {
   color: #282f45;
   cursor: pointer;
-  padding: 16px 0;
+  padding: 16px;
   padding-right: 20px;
   width: 100%;
   border: none;
@@ -201,6 +206,7 @@ main {
   -ms-transition: max-height 0.2s ease-out;
   -o-transition: max-height 0.2s ease-out;
 }
+
 .panel p,
 .suggestion .panel p {
   font-family: Sailec-Regular;
@@ -213,13 +219,11 @@ main {
 }
 .suggestion .panel {
   max-height: 150px;
-
   overflow: visible;
-  margin-bottom: 20px;
 }
 .suggestion .panel p {
   text-align: left;
-  padding: 0 10px;
+  padding: 10px;
 }
 .suggestion .plus {
   visibility: hidden;
@@ -285,6 +289,7 @@ main {
 }
 .sales h1 {
   width: 100%;
+  margin: 27px auto;
 }
 
 .sales p {

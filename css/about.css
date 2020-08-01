@@ -72,11 +72,11 @@ main {
 }
 .two {
   width: 100%;
-  padding-bottom: 120px;
+  padding-bottom: 220px;
 }
 .two p {
   width: 100%;
-  margin: auto;
+  /* margin: auto; */
   padding-top: 28px;
   padding-bottom: 28px;
   font-family: Sailec-Medium;
@@ -128,6 +128,10 @@ main {
   margin: auto;
   margin-bottom: 20px;
   padding: 0;
+}
+.three img:nth-child(1) {
+  margin-top: -220px;
+  padding-top: 50px;
 }
 
 .three .title {
@@ -349,6 +353,10 @@ button {
     max-width: 322px;
     margin: auto;
     margin-top: -142px;
+  }
+  .three img:nth-child(1) {
+    margin-top: -142px;
+    padding: 0;
   }
   .three .container .title {
     padding-top: 166px;
