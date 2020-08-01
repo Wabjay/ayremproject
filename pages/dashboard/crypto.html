@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../../css/dashboard.css" />
+    <link rel="stylesheet" href="../../css/transaction.css" />
+
+    <title>Buy Cryptocurrency</title>
+  </head>
+  <style>
+    .button-wrapper {
+      margin-top: 112px;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <!--  header path-->
+    <header>
+      <div class="profile">
+        <a href="../dashboard/notification.html" class="notify"><img src="../../images/notification.png" alt="notification"
+            id="notification" />
+          <span id="badge">3</span></a></a>
+        <div class="avatar">
+          <a href="#"><img src="../../images/avatar.png" alt="avatar" /></a>
+          <a href="#"><img src="../../images/downarrow.png" alt="dropdown" onclick="myFunction()" id="down-arrow"
+              class="down-arrow" /></a>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="../dashboard/settings.html" class="my-profile">My Profile</a>
+            <a href="#" class="logout">Logout</a>
+          </div>
+        </div>
+      </div>
+    </header>
+      <!-- ASIDE PART -->
+
+      <aside>
+        <div class="aside-content">
+          <a href="#">
+            <img
+              src="../../images/ham.svg"
+              alt="toggle-menu"
+              class="hide-desktop"
+              id="menu-open"
+          /></a>
+          <div class="sidebar hide-mobile show-desktop">
+            <div>
+              <a href="#">
+                <img
+                  src="../../images/ham.svg"
+                  alt="toggle-menu"
+                  class="exit hide-desktop"
+                  id="exit"
+              /></a>
+              <a href="../index.html">
+                <img
+                  src="../../images/dashboard-logo.png"
+                  class="logo"
+                  alt="Ayrem Logo"
+              /></a>
+            </div>
+
+            <!-- links/ dropdown content -->
+            <ul class="links">
+              <li class="activelink">
+                <a
+                  href="../../pages/dashboard/dashboard.html"
+                  id="dashboard-btn"
+                  class="dashboard"
+                >
+                  Dashboard</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../pages/dashboard/referral.html"
+                  id="referral-btn"
+                  class="refferal"
+                  >Referrals</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../pages/dashboard/settings.html"
+                  id="setting-btn"
+                  class="setting"
+                  >Setting</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+      <!-- ASIDE PART -->
+
+      <!-- MAIN PART -->
+      <main>
+        <!-- DISPLAY ALL THE TRANSACTION MADE BY USER -->
+        <section class="offer">
+          <div class="breadcrumb">
+            <a href="" onclick="goBack()">
+              <span> <</span> Back to Dashboard
+            </a>
+          </div>
+          <div class="content">
+            <!-- FIRST CONTENT ON THE PAGE -->
+            <div class="info">
+              <p class="heading">
+                Hello, Choose a Crypto and the amount you wish to sell.
+              </p>
+            </div>
+
+            <!-- UPLOAD INFORMATIONS OF CARDS TO BE SOLD-->
+            <form class="card-upload-wrapper">
+              <!-- UPLOAD CARD DIV TO BE REPEATED BASED ON THE NUMBER OF CARDS SELECTED -->
+
+              <div>
+                <label for="crypto">Choose a Crypto</label>
+                <select name="crypto" id="crypto" placeholder="">
+                  <option value=""> </option
+                  ><option value="bitcoin"> Bitcoin</option>
+                  <option value="etherium"> Etherium</option>
+                  <option value="bitcoin-cash"> Bitcoin Cash</option>
+                  <option value="litecoin"> Litecoin</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="cryptoAmount"
+                  >Amount of crypto to sell ( in Dollars)</label
+                >
+                <input
+                  type="text"
+                  name="cryptoAmount"
+                  id="cryptoAmount"
+                  value=""
+                  placeholder="How many dollars"
+                />
+              </div>
+              <div class="crypto-details">
+                <p>N300 / Dollar</p>
+                <p>Exchange Rate</p>
+
+                <p>$7000.69 Dollars</p>
+                <p>Current Price</p>
+
+                <p>0.001939129 BTC</p>
+                <p>Bicoin Equivalent</p>
+              </div>
+              <!-- CARD RECEIPT UPLOAD SECTION END -->
+
+              <div class="button-wrapper">
+                <a href="cryptopayment.html" class="button">Proceed to summary &#8594;</a>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+      <!-- MAIN PART -->
+    </div>
+
+    <!-- <!-- <script src="../../js/uploadcard.js"></script> -->
+    -->
+    <script src="../../js/dashboard.js"></script>
+    <script src="../../js/cards1.js"></script>
+  </body>
+</html>

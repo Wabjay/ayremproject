@@ -215,7 +215,7 @@ form input:focus {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin-top: 48px;
-  padding: 14px 15px;
+  padding: 14px 0;
   text-align: center;
   background: #edf2f7;
   border: 0.5px solid #ced9e8;
@@ -241,79 +241,85 @@ form input:focus {
   line-height: 19px;
   color: #333333;
 }
-@media only screen and (min-width: 414px) {
+@media only screen and (min-width: 360px) {
   .signin {
-    width: 100%;
-    max-width: 668px;
-    padding: 14px 40px;
-    font-size: 14px;
-  }
-  .long {
-    padding: 14px 25px;
-  }
-  .privacy {
-    width: 286px;
-  }
-}
-@media only screen and (min-width: 750px) {
-  header {
-    text-align: center;
-    padding-top: 30px;
-    padding-left: 0;
-  }
-  .logo {
-    padding-bottom: 24px;
+    padding: 14px 15px;
   }
 
-  section {
-    width: 70%;
-    margin: auto;
+  @media only screen and (min-width: 414px) {
+    .signin {
+      width: 100%;
+      max-width: 668px;
+      padding: 14px 40px;
+      font-size: 14px;
+    }
+    .long {
+      padding: 14px 25px;
+    }
+    .privacy {
+      width: 286px;
+    }
   }
-  form {
-    max-width: 510px;
-    margin-left: auto;
-    margin-right: auto;
+  @media only screen and (min-width: 750px) {
+    header {
+      text-align: center;
+      padding-top: 30px;
+      padding-left: 0;
+    }
+    .logo {
+      padding-bottom: 24px;
+    }
+
+    section {
+      width: 70%;
+      margin: auto;
+    }
+    form {
+      max-width: 510px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .form-control:nth-child(6) {
+      -ms-grid-column: 2;
+      -ms-grid-column-span: 1;
+      grid-column: 2/3;
+    }
+
+    .header {
+      text-align: center;
+    }
+    .form-control {
+      text-align: center;
+    }
+    .error,
+    small,
+    .privacy,
+    .pass_error {
+      text-align: left;
+    }
+    form .label {
+      text-align: center;
+      margin: auto;
+    }
+    form input {
+      width: 100%;
+    }
+
+    .input-container {
+      margin: auto;
+    }
+    .submit {
+      margin: auto;
+    }
+    .privacy {
+      width: auto;
+      text-align: center;
+    }
   }
 
-  .form-control:nth-child(6) {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
+  @media only screen and (min-width: 1024px) {
   }
-
-  .header {
-    text-align: center;
-  }
-  .form-control {
-    text-align: center;
-  }
-  .error,
-  small,
-  .privacy,
-  .pass_error {
-    text-align: left;
-  }
-  form .label {
-    text-align: center;
-    margin: auto;
-  }
-  form input {
-    width: 100%;
-  }
-
-  .input-container {
-    margin: auto;
-  }
-  .submit {
-    margin: auto;
-  }
-  .privacy {
-    width: auto;
-    text-align: center;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
   main {
     width: 716px;
     margin: auto;

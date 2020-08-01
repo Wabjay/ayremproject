@@ -104,5 +104,18 @@
       </section>
     </main>
   </body>
-  <script src="../js/validations.js"></script>
+  <script>
+    const showPass = document.getElementById("show");
+    const password = document.getElementById("password");
+
+    showPass.onclick = function () {
+      if (password.type === "password") {
+        showPass.src = "../images/hide_pass.png";
+        password.type = "text";
+      } else {
+        showPass.src = "../images/show.png";
+        password.type = "password";
+      }
+    };
+  </script>
 </html>

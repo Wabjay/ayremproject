@@ -452,14 +452,14 @@ div.slideshow-container a {
 }
 /* Second Section FOR TRANSACTIONS */
 .breadcrumb {
+  display: none;
   margin: 0 0 16px 24px;
   text-align: left;
-  display: inline-flex;
   align-content: center;
   padding: 5px 21px 5px 12px;
   border-radius: 4px;
 }
-.breadcrumb p {
+.breadcrumb a {
   color: #0032c9;
   align-self: center;
   font-family: Sailec-Regular;
@@ -940,7 +940,9 @@ form select {
     grid-area: main;
     width: 100%;
   }
-
+  .breadcrumb {
+    display: inline-flex;
+  }
   /* FOR REFERRAL PAGE */
   .referrals {
     width: 90%;

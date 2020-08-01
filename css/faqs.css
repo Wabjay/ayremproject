@@ -189,10 +189,9 @@ main {
   font-family: Sailec-Medium;
   line-height: 21px;
 }
-/* .question input:nth-child(2) {
-  display: toggle
-  ; 
-}*/
+.question p {
+  padding-left: 0;
+}
 
 .panel,
 .suggestion .panel {

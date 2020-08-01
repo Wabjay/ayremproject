@@ -16,7 +16,7 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-  
+
 .menu ul li a {
   color: #6b6f7d;
 }
@@ -204,7 +204,7 @@ section {
   grid-template-columns: 180px 1fr;
   padding-top: 10px;
   padding-bottom: 10px;
-  height: 52px;
+  /* height: 52px; */
 
   background: #ffffff;
   border: 0.5px solid #ced9e8;
@@ -265,7 +265,7 @@ section {
 }
 
 .products div p {
-  padding: 3.5px 0;
+  padding: 3.5px 0 0;
   margin: 0;
 }
 .products div p span {
@@ -513,7 +513,7 @@ section {
   background-image: url(../images/upper.svg), url(../images/lower.svg);
   background-attachment: relative;
   background-repeat: no-repeat;
-  background-position: 20px 50px, 304px 229px;
+  background-position: 10px 50px, 244px 299px;
   -webkit-box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.3),
     0px 6px 12px rgba(50, 50, 93, 0.0025);
   box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.3),
@@ -670,12 +670,19 @@ section {
 
 /* SECTION SIX ENDS */
 /* MEDIA QUERIES FOR OTHER SCREENS */
-
+@media screen and (min-width: 360px) {
+  .testimony {
+    background-position: 10px 50px, 274px 259px;
+  }
+}
 @media screen and (min-width: 375px) {
   .products {
     -ms-grid-columns: 200px 1fr;
     grid-template-columns: 200px 1fr;
     grid-column-gap: 20px;
+  }
+  .testimony {
+    background-position: 10px 50px, 294px 229px;
   }
 }
 @media screen and (min-width: 411px) {
@@ -683,6 +690,7 @@ section {
     -ms-grid-columns: 2fr 1fr;
     grid-template-columns: 2fr 1fr;
   }
+
   .products div {
     width: 100%;
     margin: auto;
@@ -722,6 +730,9 @@ section {
 
   .value p {
     max-width: 300px;
+  }
+  .testimony {
+    background-position: 20px 50px, 324px 229px;
   }
   .six input {
     width: 366px;
