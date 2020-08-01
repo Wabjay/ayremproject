@@ -195,6 +195,7 @@ main {
 
 .panel,
 .suggestion .panel {
+  padding: 5px;
   max-height: 0;
   overflow: hidden;
   position: relative;
