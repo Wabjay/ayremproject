@@ -65,14 +65,14 @@ main {
 .one p,
 .one span {
   font-size: 48px;
-  width: 100%;
+  width: 95%;
   max-width: 366px;
   margin: 30px auto;
   line-height: 90px;
 }
 .two {
   width: 100%;
-  padding-bottom: 220px;
+  padding-bottom: 180px;
 }
 .two p {
   width: 100%;
@@ -130,7 +130,7 @@ main {
   padding: 0;
 }
 .three img:nth-child(1) {
-  margin-top: -220px;
+  margin-top: -180px;
   padding-top: 50px;
 }
 
