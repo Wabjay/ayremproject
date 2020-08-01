@@ -1,3 +1,6 @@
+* {
+  outline: none;
+}
 .offer {
   grid-template-columns: 1fr;
 }

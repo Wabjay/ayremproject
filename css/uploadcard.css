@@ -11,6 +11,10 @@
   box-sizing: border-box;
   outline: none;
 }
+*:focus {
+  outline: none;
+  background-color: none;
+}
 /* MAIN CSS */
 main {
   margin-top: 0;

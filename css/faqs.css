@@ -4,7 +4,9 @@
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
-
+* {
+  outline: none;
+}
 body {
   display: -ms-grid;
   display: grid;
