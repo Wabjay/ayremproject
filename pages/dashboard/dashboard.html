@@ -7,58 +7,103 @@
     <link rel="stylesheet" href="../../css/dashboard.css" />
     <link rel="stylesheet" href="../../css/transaction.css" />
     <title>Dashboard</title>
-    <link rel="shortcut icon" href="../../images/favicon.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="../../images/favicon.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <div class="container">
       <!--  header path-->
-    <header>
-      <div class="profile">
-        <a href="../dashboard/notification.html" class="notify"><img src="../../images/notification.png" alt="notification"
-            id="notification" />
-          <span id="badge">3</span></a>
-        <div class="avatar">
-          <a href="#"><img src="../../images/avatar.png" alt="avatar" /></a>
-          <a href="#"><img src="../../images/downarrow.png" alt="dropdown" onclick="myFunction()" id="down-arrow"
-              class="down-arrow" /></a>
-          <div id="myDropdown" class="dropdown-content">
-            <a href="../dashboard/settings.html" class="my-profile">My Profile</a>
-            <a href="#" class="logout">Logout</a>
+      <header>
+        <div class="profile">
+          <a href="../dashboard/notification.html" class="notify"
+            ><img
+              src="../../images/notification.png"
+              alt="notification"
+              id="notification"
+            />
+            <span id="badge">3</span></a
+          >
+          <div class="avatar">
+            <a href="#"><img src="../../images/avatar.png" alt="avatar" /></a>
+            <a href="#"
+              ><img
+                src="../../images/downarrow.png"
+                alt="dropdown"
+                onclick="myFunction()"
+                id="down-arrow"
+                class="down-arrow"
+            /></a>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="../dashboard/settings.html" class="my-profile"
+                >My Profile</a
+              >
+              <a href="#" class="logout">Logout</a>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
-  <!-- ASIDE PART -->
-  
-  <aside>
-    <div class="aside-content">
-      <a href="#">
-        <img src="../../images/ham.svg" alt="toggle-menu" class="hide-desktop" id="menu-open" /></a>
-      <div class="sidebar hide-mobile show-desktop">
-        <div>
-          <a href="#">
-            <img src="../../images/ham.svg" alt="toggle-menu" class="exit hide-desktop" id="exit" /></a>
-          <a href="../index.html">
-            <img src="../../images/dashboard-logo.png" class="logo" alt="Ayrem Logo" /></a>
-        </div>
-  
-        <!-- links/ dropdown content -->
-        <ul class="links">
-          <li class="activelink">
-            <a href="../../pages/dashboard/dashboard.html" id="dashboard-btn" class="dashboard">
-              Dashboard</a>
-          </li>
-          <li>
-            <a href="../../pages/dashboard/referral.html" id="referral-btn" class="refferal">Referrals</a>
-          </li>
-          <li>
-            <a href="../../pages/dashboard/settings.html" id="setting-btn" class="setting">Setting</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </aside>
+      </header>
+      <!-- ASIDE PART -->
 
+      <aside>
+        <div class="aside-content">
+          <a href="#">
+            <img
+              src="../../images/ham.svg"
+              alt="toggle-menu"
+              class="hide-desktop"
+              id="menu-open"
+          /></a>
+          <div class="sidebar hide-mobile show-desktop">
+            <div>
+              <a href="#">
+                <img
+                  src="../../images/ham.svg"
+                  alt="toggle-menu"
+                  class="exit hide-desktop"
+                  id="exit"
+              /></a>
+              <a href="../index.html">
+                <img
+                  src="../../images/dashboard-logo.png"
+                  class="logo"
+                  alt="Ayrem Logo"
+              /></a>
+            </div>
+
+            <!-- links/ dropdown content -->
+            <ul class="links">
+              <li class="activelink">
+                <a
+                  href="../../pages/dashboard/dashboard.html"
+                  id="dashboard-btn"
+                  class="dashboard"
+                >
+                  Dashboard</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../pages/dashboard/referral.html"
+                  id="referral-btn"
+                  class="refferal"
+                  >Referrals</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../../pages/dashboard/settings.html"
+                  id="setting-btn"
+                  class="setting"
+                  >Setting</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
 
       <!-- ASIDE PART -->
 
@@ -68,68 +113,75 @@
 
         <section class="details-popup">
           <div>
-                <div class="inner-popup">
-                <div class="popup-split"><p>Transaction Details</p>
-                <img src="../../images/Frame.png" alt=" close botton" class="close-btn"></div>
-                <div class="transaction-border">
-                    <div class="each-transaction">
-                        <img src="../../images/airtel.png" alt="" />
-                            <div class="item">
-                                <p>$50 X 2 cards</p>
-                                <p>12th Sep, 2019</p>
-                            </div>
-                        <p class="price">N8,000</p>
-                    </div>
+            <div class="inner-popup">
+              <div class="popup-split">
+                <p>Transaction Details</p>
+                <img
+                  src="../../images/Frame.png"
+                  alt=" close botton"
+                  class="close-btn"
+                />
+              </div>
+
+              <div class="transaction-border">
+                <div class="each-transaction">
+                  <img src="../../images/airtel.png" alt="" />
+                  <div class="item">
+                    <p>$50 X 2 cards</p>
+                    <p>12th Sep, 2019</p>
+                  </div>
+                  <p class="price">N8,000</p>
                 </div>
-                <div id="transaction-status" class="successful"><P>PAYMENT STATUS HERE</P> </div>
+              </div>
+              <div id="transaction-status" class="successful">
+                <p>PAYMENT STATUS HERE</p>
+              </div>
             </div>
             <div class="inner-popup">
-                <p class="bold">ORDER DETAILS</p>
-                <div class="popup-split">
-                    <p class="order-info">Order Number</p><p class="order-details">#11011101</p></div>
-                    <div class="popup-split">
-                        <p class="order-info">Your Phone Number</p>
-                        <p class="order-details">08101223411</p>
-                    </div>
-                    <div class="popup-split">
-                        <p class="order-info">Date</p>
-                        <p class="order-details">27th Sep, 2019</p>
-                    </div>
-                    <div class="popup-split">
-                        <p class="order-info">Time</p>
-                        <p class="order-details">09 : 30pm</p>
-                    </div>
-                    </div>
+              <p class="bold">ORDER DETAILS</p>
+              <div class="popup-split">
+                <p class="order-info">Order Number</p>
+                <p class="order-details">#11011101</p>
+              </div>
+              <div class="popup-split">
+                <p class="order-info">Your Phone Number</p>
+                <p class="order-details">08101223411</p>
+              </div>
+              <div class="popup-split">
+                <p class="order-info">Date</p>
+                <p class="order-details">27th Sep, 2019</p>
+              </div>
+              <div class="popup-split">
+                <p class="order-info">Time</p>
+                <p class="order-details">09 : 30pm</p>
+              </div>
+            </div>
 
-                    <div class="inner-popup">
-                        <p class="bold">PAYMENT DETAILS</p>
-                        <div class="popup-split">
-                            <p class="order-info">Bank Name</p>
-                            <p class="order-details">GT Bank</p>
-                        </div>
-                        <div class="popup-split">
-                            <p class="order-info">Account Name</p>
-                            <p class="order-details">Olagbemi Fatai</p>
-                        </div>
-                        <div class="popup-split">
-                            <p class="order-info">Account Number</p>
-                            <p class="order-details">002919910</p>
-                        </div></div><div class="inner-popup">
-                        <div class="popup-split">
-                            <p class="order-info">You will recieve</p>
-                            <p class="order-details price">N8,000</p>
-                    </div>
-               
-                </div>
-   <div class="button-wrapper">
-                  <a href="dashboard.html" class="button">Go to Dashboard</a></div>
-
-
+            <div class="inner-popup">
+              <p class="bold">PAYMENT DETAILS</p>
+              <div class="popup-split">
+                <p class="order-info">Bank Name</p>
+                <p class="order-details">GT Bank</p>
+              </div>
+              <div class="popup-split">
+                <p class="order-info">Account Name</p>
+                <p class="order-details">Olagbemi Fatai</p>
+              </div>
+              <div class="popup-split">
+                <p class="order-info">Account Number</p>
+                <p class="order-details">002919910</p>
+              </div>
+            </div>
+            <div class="inner-popup">
+              <div class="popup-split">
+                <p class="order-info">You will recieve</p>
+                <p class="order-details price">N8,000</p>
+              </div>
+            </div>
+            <div class="button-wrapper">
+              <a href="dashboard.html" class="button">Go to Dashboard</a>
+            </div>
           </div>
-        
-
-
-
         </section>
 
         <!-- TRANSACTION DETAILS POP UP -->
@@ -138,22 +190,21 @@
         <section class="top-content">
           <div class="hello">
             <h1>Hello! StoneCold</h1>
-          <p>What do you want to buy/sell today?</p>
+            <p>What do you want to buy/sell today?</p>
           </div>
-          
+
           <div>
-          <div class="slideshow-container">
-        
-          
-               <a href="sellgiftcard.html"><img src="../../images/cards.png"></a>
-            <a href="crypto.html">
-              <img src="../../images/crypto.png">
-          </a>
-          <a href="buydata.html">
-              <img src="../../images/network.png">
-          </a>
-     
-        </div>
+            <div class="slideshow-container">
+              <a href="sellgiftcard.html"
+                ><img src="../../images/cards.png"
+              /></a>
+              <a href="crypto.html">
+                <img src="../../images/crypto.png" />
+              </a>
+              <a href="buydata.html">
+                <img src="../../images/network.png" />
+              </a>
+            </div>
           </div>
         </section>
 
@@ -179,20 +230,20 @@
               <a href="#"> View all transactions</a>
             </div>
             <div class="transaction-border">
-            <a href="#" class="pop">
-              <div class="each-transaction">
-              <img src="../../images/airtel.png" alt="" />
-              <div class="status">
-                <div class="item">
-                  <p>$50 X 2 cards</p>
-                  <p>12th Sep, 2019</p>
+              <a href="#" class="pop">
+                <div class="each-transaction">
+                  <img src="../../images/airtel.png" alt="" />
+                  <div class="status">
+                    <div class="item">
+                      <p>$50 X 2 cards</p>
+                      <p>12th Sep, 2019</p>
+                    </div>
+                    <p>Verify</p>
+                  </div>
+                  <p class="price">N8,000</p>
                 </div>
-                <p>Verify</p>
-              </div>
-              <p class="price">N8,000</p>
-              </div>
-            </a> 
-          </div>
+              </a>
+            </div>
           </div>
 
           <!-- MAIN TRANSACTIONS  -->
@@ -201,87 +252,84 @@
               <p>Yesterday</p>
             </div>
             <!-- DISPLAY ALL THE TRANSACTION MADE BY USER -->
-<div class="transaction-border">
-  <a href="#" class="pop">
-            <div class="each-transaction">
-              <img src="../../images/airtel.png" alt="" />
-              <div class="status">
-                <div class="item">
-                  <p>$50 X 2 cards</p>
-                  <p>12th Sep, 2019</p>
-                </div>
-                <p>Sent</p>
-              </div>
-              <p class="price">N8,000</p>
-            </div></a>
+            <div class="transaction-border">
               <a href="#" class="pop">
-            <div class="each-transaction">
-              <img src="../../images/airtel.png" alt="" />
-              <div class="status">
-                <div class="item">
-                  <p>$50 X 2 cards</p>
-                  <p>12th Sep, 2019</p>
-                </div>
-                <p>Recieved</p>
-              </div>
-              <p class="price">N8,000</p>
-            </div></a>
-            <a href="#" class="pop">
-            <div class="each-transaction">
-              <img src="../../images/bitcoin.png" alt="" />
-              <div class="status">
-                <div class="item">
-                  <p>$300 Bitcoins</p>
-                  <p>12th Sep, 2019</p>
-                </div>
-                <p>Verify</p>
-              </div>
-              <p class="price">N8,000</p>
-            </div></a>
-
-            <a href="#" class="pop">
-              <div class="each-transaction">
-                <img src="../../images/bitcoin.png" alt="" />
-                <div class="status">
-                  <div class="item">
-                    <p>$1200 Etherium</p>
-                    <p>23th July, 2020</p>
+                <div class="each-transaction">
+                  <img src="../../images/airtel.png" alt="" />
+                  <div class="status">
+                    <div class="item">
+                      <p>$50 X 2 cards</p>
+                      <p>12th Sep, 2019</p>
+                    </div>
+                    <p>Sent</p>
                   </div>
-                  <p>Sent</p>
-                </div>
-                <p class="price">N480,000,000</p>
-              </div>
-            </a>
+                  <p class="price">N8,000</p>
+                </div></a
+              >
+              <a href="#" class="pop">
+                <div class="each-transaction">
+                  <img src="../../images/airtel.png" alt="" />
+                  <div class="status">
+                    <div class="item">
+                      <p>$50 X 2 cards</p>
+                      <p>12th Sep, 2019</p>
+                    </div>
+                    <p>Recieved</p>
+                  </div>
+                  <p class="price">N8,000</p>
+                </div></a
+              >
+              <a href="#" class="pop">
+                <div class="each-transaction">
+                  <img src="../../images/bitcoin.png" alt="" />
+                  <div class="status">
+                    <div class="item">
+                      <p>$300 Bitcoins</p>
+                      <p>12th Sep, 2019</p>
+                    </div>
+                    <p>Verify</p>
+                  </div>
+                  <p class="price">N8,000</p>
+                </div></a
+              >
 
-            <a href="#" class="pop">
-            <div class="each-transaction">
-              <img src="../../images/airtel.png" alt="" />
-              <div class="status">
-                <div class="item">
-                  <p>$50 X 2 cards</p>
-                  <p>12th Sep, 2019</p>
+              <a href="#" class="pop">
+                <div class="each-transaction">
+                  <img src="../../images/bitcoin.png" alt="" />
+                  <div class="status">
+                    <div class="item">
+                      <p>$1200 Etherium</p>
+                      <p>23th July, 2020</p>
+                    </div>
+                    <p>Sent</p>
+                  </div>
+                  <p class="price">N480,000,000</p>
                 </div>
-                <p class="verify">Verify</p>
-              </div>
-              <p class="price">N8,000</p>
-            </div></a>
+              </a>
+
+              <a href="#" class="pop">
+                <div class="each-transaction">
+                  <img src="../../images/airtel.png" alt="" />
+                  <div class="status">
+                    <div class="item">
+                      <p>$50 X 2 cards</p>
+                      <p>12th Sep, 2019</p>
+                    </div>
+                    <p class="verify">Verify</p>
+                  </div>
+                  <p class="price">N8,000</p>
+                </div></a
+              >
             </div>
           </div>
         </section>
-        
-
       </main>
       <!-- MAIN PART -->
     </div>
 
-
-
-
-
-
     <script src="../../js/dashboard.js"></script>
-<script src="../../js/detail-popup.js"></script>
- <!-- MODAL POPUP FOR THE TRANSACTION DETAILS -->
+    <script src="../../js/detail-popup.js"></script>
+    <!-- MODAL POPUP FOR THE TRANSACTION DETAILS -->
     <!-- <script>
     const details = document.querySelector(".details-popup");
     const closeBtn = document.querySelector(".close-btn");

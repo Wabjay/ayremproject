@@ -1,14 +1,19 @@
 var menu = document.querySelector("#menu-open");
 var nav = document.querySelector(".sidebar");
 
-menu.addEventListener("click", function(e) {
+menu.addEventListener("click", function (e) {
   nav.classList.toggle("hide-mobile");
   menu.classList.toggle("hide-mobile");
+  // if (nav.classList.contains("hide-mobile")) {
+  //   nav.style.width = 0;
+  // } else {
+  //   nav.style.width = "240px";
+  // }
 
   e.preventDefault();
 });
 
-exit.addEventListener("click", function(e) {
+exit.addEventListener("click", function (e) {
   nav.classList.toggle("hide-mobile");
   menu.classList.toggle("hide-mobile");
   e.preventDefault();
@@ -19,7 +24,7 @@ function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show-drop-content");
 
   // Close the dropdown menu if the user clicks outside of it
-  window.onclick = function(event) {
+  window.onclick = function (event) {
     if (!event.target.matches(".down-arrow")) {
       var dropdowns = document.getElementById("myDropdown");
 
@@ -37,11 +42,11 @@ function detailPop() {
   const popBtn = document.querySelectorAll(".pop");
 
   for (i = 0; i < popBtn.length; i++) {
-    popBtn[i].addEventListener("click", function() {
+    popBtn[i].addEventListener("click", function () {
       details.style.display = "block";
     });
   }
-  closeBtn.onclick = function() {
+  closeBtn.onclick = function () {
     details.style.display = "none";
   };
 }

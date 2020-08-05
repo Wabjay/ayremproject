@@ -4,8 +4,8 @@
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
-
-@import url("../css/fonts.css");
+@import url(../fonts/all.css);
+@import url(fonts.css);
 * {
   margin: 0;
   padding: 0;
@@ -25,7 +25,8 @@ a {
   text-decoration: none;
   color: inherit;
 }
-header {
+header,
+#blue {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -199,6 +200,10 @@ main {
 footer {
   grid-area: footer;
 }
+footer .icon {
+  width: 50px;
+  color: red;
+}
 
 .hide-mobile {
   display: none;
@@ -228,6 +233,7 @@ footer {
   padding: 8px 8px;
   text-align: center;
   cursor: pointer;
+  font-family: Sailec-Medium;
 }
 #nav-signing a,
 #nav-create a {
@@ -306,8 +312,35 @@ footer li {
 footer li {
   list-style-type: none;
   padding-bottom: 16px;
-}
 
+  /* border: red solid 1px; */
+}
+footer div:first-child li:nth-child(4) {
+  display: flex;
+  width: 70px;
+  justify-content: space-between;
+}
+footer a img {
+  opacity: 0.5;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  -webkit-backface-visibility: hidden;
+}
+footer a:hover img {
+  opacity: 1;
+}
+@media only screen and (min-width: 411px) {
+  .create,
+  #nav-create,
+  .signing,
+  #nav-signin {
+    padding: 13px 13px;
+  }
+}
 @media only screen and (min-width: 750px) {
   footer {
     width: 90%;
@@ -319,6 +352,9 @@ footer li {
     margin: auto;
     margin-bottom: 98px;
     grid-gap: 50px;
+  }
+  footer .bold {
+    padding-top: 0;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -453,8 +489,8 @@ footer li {
     color: #0032c9;
     border-radius: 4px;
     font-size: 16px;
-    padding: 8px 13px;
-    margin: 0 36px;
+    /* padding: 8px 13px; */
+    /* margin: 0 36px; */
     margin-left: 0;
     -ms-grid-column-align: stretch;
     justify-self: stretch;

@@ -153,6 +153,9 @@ aside {
   bottom: 0;
   padding-top: 20px;
 }
+/* #main-open:active .sidebar{
+  width: 240px;
+} */
 .sidebar > div {
   display: inline;
 }

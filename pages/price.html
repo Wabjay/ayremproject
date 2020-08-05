@@ -24,10 +24,10 @@
   </head>
   <body>
 
-    <header id="header">
+    <header id="header" class="scroll">
     
         <nav id="navbar">
-            <a href="index.html"><img src="../images/logo.svg" alt="" class="logo"></a>
+            <a href="index.html"><img src="../images/logo_white.png" alt="" class="logo"></a>
     
             <div class="menu">
                 <a href="#" class="hide-desktop">
@@ -201,9 +201,10 @@
                     Giftcards and Dataplans from
                     a trustworthy Brand.</a></li>
             <li><a href=""> CONNECT WITH US</a></li>
-            <li><a href="#"><img src="../images/fb.png" alt=""></a><a href="#"><img src="../images/instagram.png"
-                        alt=""></a>
-            </li>
+        <li id="sociai">
+            <a href="#"><img src="../images/fb.png" alt=""></a>
+            <a href="#"><img src="../images/instagram.png" alt=""></a>
+        </li>
             <li>&#169; 2020 Ayrem exchange</li>
         </ul>
     </div>
@@ -240,5 +241,17 @@
 
 </footer>
 <script src="../js/style.js"></script>
+<script>
+    
+function changeHeader() {
+    if (document.body.scrollTop > 530 || document.documentElement.scrollTop > 530) {
+        document.getElementById("header").className = "";
+        document.querySelector(".logo").src = "../images/logo.svg";
+    } else {
+        document.getElementById("header").className = "scroll";
+        document.querySelector(".logo").src = "../images/logo_white.png";
+    }
+}
+</script>
   </body>
 </html>

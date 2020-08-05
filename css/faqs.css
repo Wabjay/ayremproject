@@ -7,6 +7,7 @@
 * {
   outline: none;
 }
+
 body {
   display: -ms-grid;
   display: grid;
@@ -102,6 +103,7 @@ main {
   color: #0032c9;
   font-size: 24px;
   font-family: "Sailec-Bold";
+  padding-top: 8px;
 }
 .info-container {
   border: 0.5px solid #ced9e8;
@@ -143,11 +145,97 @@ main {
 }
 
 /* FAQ ACCORDION */
+/* FAQ ACCORDION NEW CODE */
 
-.question-container,
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/*
+* Accordion
+*/
+/* Basic Accordion Styles */
+
+.question-container input[name="panel"] {
+  display: none;
+}
+.question-container label {
+  position: relative;
+  display: block;
+  padding: 16px;
+  padding-left: 0;
+  font-size: 16px;
+  color: #282f45;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87);
+}
+.question-container label:after {
+  content: url(../images/plus.png);
+  position: absolute;
+  right: 1em;
+  font-size: 16px;
+  width: 1em;
+  height: 1em;
+  color: #999;
+  text-align: center;
+  border-radius: 50%;
+}
+.question-container input:checked + label:after {
+  content: url(../images/minus.png);
+  width: 1em;
+  height: 1em;
+  color: #999;
+  /* adjsut line-height to vertically center icon */
+  line-height: 0.8em;
+}
+.question-container .accordion__content {
+  overflow: hidden;
+  height: 0;
+  max-height: 0;
+  font-size: 16px;
+  position: relative;
+  padding: 0 5px;
+  color: #6b6f7d;
+  transition: max-height 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87);
+  -webkit-transition: max-height 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87);
+  -moz-transition: max-height 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87);
+  -ms-transition: max-height 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87);
+  -o-transition: max-height 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87);
+}
+
+.question-container .accordion__content .accordion__header {
+  padding: 0 16px;
+}
+
+.question-container .accordion__content .accordion__body {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+/* 
+* Size Variations
+*/
+input[name="panel"]:checked ~ .accordion__content.accordion__content--small {
+  height: auto;
+  max-height: 150px;
+}
+
+input[name="panel"]:checked ~ .accordion__content.accordion__content--med {
+  max-height: 200px;
+}
+
+input[name="panel"]:checked ~ .accordion__content.accordion__content--large {
+  /* height: 300px; */
+  max-height: 300px;
+}
+
+/* FAQ ACCORDION NEW CODE END */
+/* .question-container, */
 .suggestion .question-container {
   position: relative;
-  padding: 16px 0;
+  padding: 0;
   padding-top: 0;
   border-bottom: 0.5px solid #ced9e8;
 }
@@ -161,20 +249,27 @@ main {
   justify-content: space-between;
   color: #282f45;
   width: 100%;
+  font-family: Sailec-Medium;
+  line-height: 21px;
+  font-size: 18px;
   padding-right: 10px;
-  transition: 0.4s;
-  -webkit-transition: 0.4s;
-  -moz-transition: 0.4s;
-  -ms-transition: 0.4s;
-  -o-transition: 0.4s;
+  transition: height 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87);
+  -webkit-transition: height 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87);
+  -moz-transition: height 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87);
+  -ms-transition: height 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87);
+  -o-transition: height 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87);
 }
+/* .question {
+  display: inline;
+} */
 .suggestion .question {
-  width: 95%;
+  width: 90%;
+  margin: 0 auto;
 }
 .suggestion .question-container {
   margin: 0 auto;
 }
-.question p,
+/* .question p, */
 .suggestion .question p {
   color: #282f45;
   cursor: pointer;
@@ -195,17 +290,20 @@ main {
 
 .panel,
 .suggestion .panel {
-  max-height: 0;
+  /* max-height: 0; */
   overflow: hidden;
   position: relative;
-  transition: max-height 0.2s ease-out;
-  background: rgba(245, 242, 242, 0.3);
+  transition: max-height 0.2s ease-in-out;
   -webkit-transition: max-height 0.2s ease-out;
-  -moz-transition: max-height 0.2s ease-out;
-  -ms-transition: max-height 0.2s ease-out;
-  -o-transition: max-height 0.2s ease-out;
+  -moz-transition: max-height 0.2s ease-in-out;
+  -ms-transition: max-height 0.2s ease-in-out;
+  -o-transition: max-height 0.2s ease-in-out;
+  -webkit-transition: max-height 0.2s ease-in-out;
 }
-
+/* .suggestion .panel {
+  max-height: 150px;
+  overflow: visible;
+} */
 .panel p,
 .suggestion .panel p {
   font-family: Sailec-Regular;
@@ -217,21 +315,20 @@ main {
   padding: 5px;
   padding-bottom: 16px;
 }
-.suggestion .panel {
-  max-height: 150px;
-  overflow: visible;
-}
+
 .suggestion .panel p {
   text-align: left;
   padding: 10px;
 }
-.suggestion .plus {
+.suggestion input {
   visibility: hidden;
 }
 
 /* FAQ ACCORDION */
 .phone,
 .email {
+  width: 90%;
+  margin: auto;
   background: #ffffff;
   padding: 26px 0;
   border: 0.5px solid #c5c9d5;
@@ -327,6 +424,7 @@ main {
   }
   .email,
   .phone {
+    width: 100%;
     height: 200px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -359,6 +457,9 @@ main {
     margin-right: 20px;
   }
   .sales h1 {
+    width: 100%;
+    margin: 0;
+    align-self: center;
     text-align: left;
   }
 }

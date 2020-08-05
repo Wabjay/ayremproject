@@ -4,7 +4,7 @@ for (i = 0; i < showButton.length; i++) {
   const copyButton = document.querySelectorAll(".copy")[i];
   const showText = document.querySelector("#pop");
 
-  copyButton.onclick = function(e) {
+  copyButton.onclick = function (e) {
     e.preventDefault();
     copyText.select();
     copyText.setSelectionRange(0, 99999); // used for mobile phone
@@ -24,3 +24,23 @@ for (i = 0; i < showButton.length; i++) {
     console.log(showButton.length);
   };
 }
+
+// SEARCH SUGGESTION FOR FAQ PAGE END
+const search = document.querySelector(".search");
+const suggestionPlanel = document.querySelector(".suggestion");
+const questionContainer = document.querySelectorAll(".question-container");
+const question = document.querySelectorAll(".question");
+const questions = Array.from(questionContainer);
+
+search.addEventListener("keyup", function () {
+  const input = search.value;
+  suggestionPlanel.innerHTML = "";
+
+  const suggestion = questions.filter(function (questionContainer) {
+    // for (i = 0; i < questions.length; i++) {
+    return questionContainer.innerHTML.toLowerCase().includes(input);
+    //   if (question.innerText.toLowerCase().includes(input)) {
+    //     return questionContainer[i].innerHTML;
+    //   }
+  });
+});

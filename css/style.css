@@ -207,7 +207,8 @@ section {
   /* height: 52px; */
 
   background: #ffffff;
-  border: 0.5px solid #ced9e8;
+  border-bottom: 0.5px solid #ced9e8;
+  /* border-top: none; */
 }
 .products:first-child {
   background: #edf2f7;
@@ -608,8 +609,12 @@ section {
   padding-bottom: 28px;
   color: #e8edff;
 }
+.six div div {
+  border-radius: 8px;
+}
 .six input {
   width: 90%;
+  font-size: 16px;
   height: 48px;
   margin: 20px auto;
   margin-bottom: 0;
@@ -618,11 +623,14 @@ section {
   padding-bottom: 10px;
   background: #ffffff;
   border: 1px solid #ffffff;
-  color: #e8edff;
+  color: #282f45;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  border-radius: 4px;
-  color: #c5c9d5;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 .six .sub {
   font-family: Sailec-Regular;
@@ -742,6 +750,43 @@ section {
   }
 }
 
+@media screen and (min-width: 570px) {
+  .six .container div {
+    width: 480px;
+    height: 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #ffffff;
+    margin: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .six input {
+    width: 50%;
+    margin: 20px auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 350px;
+    margin: auto;
+    padding: auto;
+    padding-left: 15px;
+    outline: none;
+    border: none;
+    background: none;
+  }
+  .button {
+    font-family: Sailec-Medium;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 10px;
+    width: 180px;
+    margin: 5px;
+  }
+}
+
 @media screen and (min-width: 750px) {
   .one .heading p {
     width: 80%;
@@ -839,7 +884,7 @@ section {
     display: flex;
     background: #ffffff;
     margin: auto;
-
+    border-radius: 8px;
     margin-bottom: 20px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
