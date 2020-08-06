@@ -272,7 +272,7 @@ footer {
   padding-top: 70px;
   margin-top: 100px;
   width: 200px;
-  color: #43495c;
+  color: #6d7386;
   font-size: 14px;
   line-height: 24px;
 }
@@ -330,8 +330,7 @@ footer div:last-child .bold {
   line-height: 17px;
   padding-bottom: 4px;
 }
-footer a img,
-footer a {
+footer a img {
   opacity: 0.5;
   transition: 0.5s ease;
   backface-visibility: hidden;
@@ -341,9 +340,9 @@ footer a {
   -o-transition: 0.5s ease;
   -webkit-backface-visibility: hidden;
 }
-footer a,
-footer div:last-child li:nth-child(even) {
-  opacity: 0.7;
+footer a:hover,
+footer div:last-child li:nth-child(even):hover {
+  color: #444853;
 }
 footer a:hover img,
 footer a:hover {
