@@ -37,7 +37,7 @@ header,
   background: #fff;
   z-index: 100;
   margin: auto;
-  border-bottom: 0.5px solid #c5c9d5;
+  border-bottom: 0.5px solid #edf2f7;
 }
 .scroll {
   background: #0d152e;
@@ -220,9 +220,11 @@ footer .icon {
   text-align: center;
   cursor: pointer;
   padding: 0;
+  font-family: Sailec-Medium;
 }
 #nav-signing a {
   color: #0032c9;
+  font-family: Sailec-Medium;
 }
 .create,
 #nav-create {
@@ -230,7 +232,7 @@ footer .icon {
   color: #fff;
   border-radius: 4px;
   font-size: 16px;
-  padding: 8px 8px;
+  padding: 8px 13px;
   text-align: center;
   cursor: pointer;
   font-family: Sailec-Medium;
@@ -239,6 +241,7 @@ footer .icon {
 #nav-create a {
   text-align: center;
   margin: auto;
+  font-family: Sailec-Medium;
 }
 ul #nav-signing,
 ul #nav-create {
@@ -320,6 +323,13 @@ footer div:first-child li:nth-child(4) {
   width: 70px;
   justify-content: space-between;
 }
+footer div:last-child li {
+  padding-bottom: 24px;
+}
+footer div:last-child .bold {
+  line-height: 17px;
+  padding-bottom: 4px;
+}
 footer a img {
   opacity: 0.5;
   transition: 0.5s ease;
@@ -338,7 +348,8 @@ footer a:hover img {
   #nav-create,
   .signing,
   #nav-signin {
-    padding: 13px 13px;
+    padding: 8px 22px;
+    font-family: Sailec-Medium;
   }
 }
 @media only screen and (min-width: 750px) {
@@ -420,7 +431,7 @@ footer a:hover img {
     grid-area: links;
     -ms-grid-column-align: self-end;
     justify-self: self-end;
-    margin-right: 0;
+    margin-right: 30px;
   }
   .menu ul {
     display: -webkit-box;
@@ -432,7 +443,7 @@ footer a:hover img {
     display: flex;
     list-style: none;
     position: relative;
-    width: 500px;
+    width: 370px;
     height: auto;
     font-size: 16px;
     text-align: right;
@@ -440,6 +451,7 @@ footer a:hover img {
     z-index: 10;
     padding: 0;
     margin: 0;
+    margin-right: 30px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
@@ -453,7 +465,7 @@ footer a:hover img {
     text-decoration: none;
     display: block;
     width: 100%;
-    padding: 0 5px;
+    /* padding: 0 5px; */
     margin: 29px auto 29px;
     /* margin-right: 5px; */
     background: none;
@@ -489,7 +501,7 @@ footer a:hover img {
     color: #0032c9;
     border-radius: 4px;
     font-size: 16px;
-    /* padding: 8px 13px; */
+    padding: 8px 22px;
     /* margin: 0 36px; */
     margin-left: 0;
     -ms-grid-column-align: stretch;
