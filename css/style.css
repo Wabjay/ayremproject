@@ -102,7 +102,7 @@ section {
 .one .heading p {
   width: 95%;
   max-width: 359px;
-  height: 208px;
+  /* height: 208px; */
   left: 28px;
   top: 260px;
 
@@ -133,7 +133,7 @@ section {
   background: #0032c9;
   border-radius: 4px;
   margin-bottom: 184px;
-  margin-top: 26px;
+  margin-top: 46px;
   font-family: "Sailec-Medium";
   font-size: 18px;
   line-height: 21px;
@@ -683,6 +683,9 @@ section {
   }
 }
 @media screen and (min-width: 375px) {
+  .one .heading .button {
+    margin-top: 26px;
+  }
   .products {
     -ms-grid-columns: 200px 1fr;
     grid-template-columns: 200px 1fr;
@@ -1080,13 +1083,13 @@ section {
     -ms-grid-column-align: self-end;
     justify-self: self-end;
   }
-  .dash {
+  /* .dash {
     width: 80%;
     height: 601px;
     top: 473px;
     margin-top: -245px;
     margin-bottom: 519px;
-  }
+  } */
   .rates {
     width: 100%;
     margin-top: -367px;
@@ -1124,6 +1127,7 @@ section {
 
   .five .container {
     width: 90%;
+    max-width: 1150px;
     padding-bottom: 220px;
     margin: auto;
   }
@@ -1153,11 +1157,10 @@ section {
     height: 390px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    background-image: url(../images/vector.png), url(../images/vector1.png);
+    background-image: url(../images/six-bkg.png);
     background-attachment: absolute;
     background-repeat: no-repeat;
-    background-position: -260px -100px, 535px -100px;
-    margin-top: -180px;
+    background-size: 100%;
   }
   .six .sub {
     width: auto;
@@ -1165,20 +1168,17 @@ section {
   }
 }
 @media only screen and (min-width: 1150px) {
+  .one .heading p {
+    margin-bottom: 0px;
+  }
   .products div div p:nth-child(1),
   .products .split p:nth-child(1) {
     width: 200px;
   }
 
   .services .split,
-  .split,
   .split3 {
     width: 90%;
-  }
-  .six .container {
-    /* max-width: 931px; */
-    background-position: -270px -100px, 645px -100px;
-    margin-top: -180px;
   }
   .value {
     max-width: 471px;
@@ -1204,6 +1204,7 @@ section {
     margin-bottom: 0;
   }
   .dash {
+    width: 100%;
     width: 1150px;
     height: 801px;
   }
@@ -1225,12 +1226,5 @@ section {
   }
   .five .split {
     width: 1128px;
-  }
-
-  .six .container {
-    max-width: 1128px;
-    height: 390px;
-    background-position: -270px -100px, 845px -100px;
-    margin-top: -200px;
   }
 }
