@@ -218,6 +218,9 @@ section {
   height: 52px;
   border-radius: 16px 16px 0 0;
 }
+.products:last-child {
+  border-bottom: none;
+}
 .products .action {
   font-family: "Sailec-Regular";
   font-style: normal;
@@ -407,7 +410,7 @@ section {
 }
 .four p {
   text-align: left;
-  line-height: 36px;
+  /* line-height: 36px; */
   width: 100%;
   max-width: 504px;
   font-size: 20px;
@@ -480,10 +483,12 @@ section {
 }
 .value p {
   width: 90%;
+  padding-bottom: 8px;
   max-width: 240px;
 }
 .value .title {
   font-size: 18px;
+  padding-top: 12px;
 }
 .value p span {
   font-family: Sailec-Regular;
@@ -492,6 +497,8 @@ section {
   font-size: 16px;
   line-height: 25px;
   color: #43495c;
+  /* margin-top: 8px;
+  padding-top: 8px; */
 }
 .testimony {
   font-family: Sailec-RegularItalic;
@@ -723,6 +730,7 @@ section {
   .testimony p {
     margin-bottom: 30px;
     text-align: center;
+    line-height: 34px;
   }
 
   .four .big,
@@ -841,6 +849,7 @@ section {
   .split p,
   .split div {
     margin-top: 0;
+    line-height: 38px;
   }
   .four .testimony {
     width: 414px;
@@ -1010,6 +1019,16 @@ section {
     margin-left: 0px;
     justify-self: self-start;
   }
+  .steps {
+    position: relative;
+  }
+  .steps img.arrow {
+    position: absolute;
+    left: 87%;
+    top: 22%;
+    width: 58px;
+    height: 10px;
+  }
 
   .split .hide-mobile {
     display: block;
@@ -1174,6 +1193,11 @@ section {
   .products div div p:nth-child(1),
   .products .split p:nth-child(1) {
     width: 200px;
+  }
+  .steps img.arrow {
+    width: 98px;
+    left: 82%;
+    top: 25%;
   }
 
   .services .split,
