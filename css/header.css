@@ -520,7 +520,7 @@ footer a:hover {
 
 @media only screen and (min-width: 1440px) {
   nav {
-    width: 80%;
+    width: 90%;
     -ms-grid-columns: 1fr 3fr 300px;
     grid-template-columns: 1fr 3fr 300px;
   }

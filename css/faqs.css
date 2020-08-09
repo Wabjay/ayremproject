@@ -82,7 +82,7 @@ aside {
   border-bottom: none;
 }
 main {
-  width: 100%;
+  width: 90%;
   max-width: 1150px;
   margin: auto;
   display: -ms-grid;
@@ -97,7 +97,7 @@ main {
 .info-container,
 .content {
   position: relative;
-  width: 90%;
+  width: 100%;
   margin: 50px auto;
 }
 .content p {
@@ -168,7 +168,7 @@ main {
   /* padding: 16px; */
   padding: 0;
   /* padding-bottom: 16px; */
-  font-size: 20px;
+  font-size: 16px;
   color: #282f45;
   cursor: pointer;
   transition: all 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87);
@@ -180,7 +180,7 @@ main {
 .question-container label:after {
   content: url(../images/plus.png);
   position: absolute;
-  right: 1em;
+  right: 0;
   font-size: 20px;
   width: 1em;
   height: 1em;
@@ -425,6 +425,9 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--large {
     font-size: 32px;
     line-height: 36px;
   }
+  .question-container label {
+    font-size: 32px;
+  }
   .info p {
     width: 548px;
     margin: auto;
@@ -457,6 +460,7 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--large {
   .sales {
     width: 100%;
     height: 192px;
+    margin-left: 0;
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-column: 1/4;
@@ -512,7 +516,7 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--large {
   }
 
   .sales {
-    width: 734px;
+    /* width: 734px; */
     height: 192px;
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
@@ -542,7 +546,7 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--large {
   }
   .content-head {
     min-width: 200px;
-    margin-left: 120px;
+    /* margin-left: 120px; */
   }
   .question {
     -ms-grid-columns: 80% 20%;
@@ -572,6 +576,12 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--large {
   }
   .content .question-container:first-child {
     padding-top: 15px;
+  }
+}
+@media only screen and (min-width: 1150px) {
+  .info-container {
+    width: 90%;
+    max-width: 1150px;
   }
 }
 @media only screen and (min-width: 1440px) {

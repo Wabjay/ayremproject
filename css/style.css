@@ -25,7 +25,7 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
   text-align: center;
   color: #ffffff;
 }
@@ -391,13 +391,6 @@ section {
 .services .split:nth-child(3) {
   border: none;
 }
-.four .center,
-.five .center {
-  text-align: center;
-  margin: auto;
-  max-width: 672px;
-  padding-bottom: 0;
-}
 
 .four .small {
   margin-top: 0;
@@ -435,7 +428,17 @@ section {
   font-style: normal;
   font-weight: normal;
   line-height: 44px;
-  font-size: 24px;
+  font-size: 32px;
+}
+.four .big {
+  padding-bottom: 24px;
+}
+.four .center,
+.five .center {
+  text-align: center;
+  margin: auto;
+  max-width: 672px;
+  padding-bottom: 0;
 }
 .four .button {
   -webkit-box-sizing: border-box;
@@ -571,6 +574,7 @@ section {
   align-self: center;
   width: 126px;
   margin: 0 auto;
+  text-align: left;
 }
 .testimony span {
   font-family: Sailec-Regular;
@@ -613,7 +617,7 @@ section {
 }
 .five img {
   padding-top: 75px;
-  padding-bottom: 24px;
+  padding-bottom: 12px;
 }
 /* SECTION FIVE ENDS SIX START */
 
@@ -851,9 +855,9 @@ section {
   .split .small {
     padding-bottom: 8px;
   }
-  .split img {
+  /* .split img {
     margin-top: 50px;
-  }
+  } */
 
   .split p,
   .split div {
@@ -874,6 +878,9 @@ section {
   }
   .five .big {
     margin: auto;
+  }
+  .five img {
+    padding-bottom: 24px;
   }
   .five .split {
     display: -ms-grid;
@@ -1171,8 +1178,7 @@ section {
   }
   .five .big {
     width: 573px;
-
-    padding-bottom: 8;
+    padding-bottom: 8px;
     margin-bottom: 0;
   }
   .five .sub {
