@@ -376,6 +376,11 @@ section {
   color: #43495c;
   font-size: 20px;
 }
+.steps img.arrow {
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+}
 .services .split {
   width: 90%;
   margin: auto;
@@ -486,7 +491,11 @@ section {
   padding-bottom: 8px;
   max-width: 240px;
 }
-.value .title {
+.left p {
+  padding-bottom: 8px;
+}
+.value .title,
+.left .title {
   font-size: 18px;
   padding-top: 12px;
 }
@@ -851,6 +860,9 @@ section {
     margin-top: 0;
     line-height: 38px;
   }
+  .left p {
+    line-height: 25px;
+  }
   .four .testimony {
     width: 414px;
     height: 408px;
@@ -1023,6 +1035,7 @@ section {
     position: relative;
   }
   .steps img.arrow {
+    visibility: visible;
     position: absolute;
     left: 87%;
     top: 22%;

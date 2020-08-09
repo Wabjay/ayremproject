@@ -35,6 +35,7 @@ for (i = 0; i < acc1.length; i++) {
 }
 
 // SEARCH SUGGESTION FOR FAQ PAGE END
+const searchContainer = document.querySelectorAll(".search-container");
 const search = document.querySelector(".search");
 const suggestionPlanel = document.querySelector(".suggestion");
 const questionContainer = document.querySelectorAll(".question-container");
@@ -64,6 +65,12 @@ search.addEventListener("keyup", function () {
   if (input === "") {
     suggestionPlanel.innerHTML = "";
   }
+
+  // window.onclick = function (event) {
+  //   if (event.target.matches(".search-container")) {
+  //     // suggestionPlanel.innerHTML = "";
+  //   }
+  // };
 });
 
 function changeHeader() {
@@ -78,15 +85,4 @@ function changeHeader() {
     document.querySelector(".logo").src = "../images/logo_white.png";
   }
 }
-// for panel button change
-// const questionImg = document.querySelectorAll(".question");
-// const showPass = document.querySelectorAll(".plus");
-// for (i = 0; i < acc.length; i++) {
-//   showPass[i].addEventListener("click", function () {
-//     if (showPass.src == "../images/plus.png") {
-//       showPass.src = "../images/minus.png";
-//     } else {
-//       showPass.src = "../images/plus.png";
-//     }
-//   });
-// }
+// Close the dropdown menu if the user clicks outside of it

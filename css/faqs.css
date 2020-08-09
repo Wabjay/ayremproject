@@ -78,7 +78,8 @@ aside {
 }
 
 .suggestion {
-  border: solid 0.5px #666;
+  border: 0.5px solid #ced9e8;
+  border-bottom: none;
 }
 main {
   width: 100%;
@@ -164,18 +165,23 @@ main {
 .question-container label {
   position: relative;
   display: block;
-  padding: 16px;
-  padding-left: 0;
-  font-size: 16px;
+  /* padding: 16px; */
+  padding: 0;
+  /* padding-bottom: 16px; */
+  font-size: 20px;
   color: #282f45;
   cursor: pointer;
   transition: all 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87);
+}
+.question-container label span {
+  margin-right: 20px;
+  line-height: 25px;
 }
 .question-container label:after {
   content: url(../images/plus.png);
   position: absolute;
   right: 1em;
-  font-size: 16px;
+  font-size: 20px;
   width: 1em;
   height: 1em;
   color: #999;
@@ -194,9 +200,10 @@ main {
   overflow: hidden;
   height: 0;
   max-height: 0;
-  font-size: 16px;
+  font-size: 20px;
   position: relative;
   padding: 0 5px;
+  padding-left: 0;
   color: #6b6f7d;
   transition: max-height 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87);
   -webkit-transition: max-height 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87);
@@ -211,7 +218,8 @@ main {
 
 .question-container .accordion__content .accordion__body {
   font-size: 16px;
-  line-height: 19px;
+  line-height: 22px;
+  padding-top: 16px;
 }
 
 /* 
@@ -235,12 +243,13 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--large {
 /* .question-container, */
 .suggestion .question-container {
   position: relative;
-  padding: 0;
-  padding-top: 0;
+  /* padding: 0;
+  padding-top: 0; */
   border-bottom: 0.5px solid #ced9e8;
 }
-.suggestion .question-container {
-  padding: 0;
+.suggestion .question-container label span {
+  margin-right: 50px;
+  line-height: 23px;
 }
 .question,
 .suggestion .question {
@@ -251,7 +260,7 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--large {
   width: 100%;
   font-family: Sailec-Medium;
   line-height: 21px;
-  font-size: 18px;
+  font-size: 20px;
   padding-right: 10px;
   transition: height 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87);
   -webkit-transition: height 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87);
@@ -262,8 +271,16 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--large {
 /* .question {
   display: inline;
 } */
+
+.question-container {
+  padding: 32px 0;
+  border-bottom: 0.5px solid #ced9e8;
+}
+.content .question-container:first-child {
+  padding-top: 24px;
+}
 .suggestion .question {
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
 }
 .suggestion .question-container {
@@ -279,7 +296,7 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--large {
   border: none;
   text-align: left;
   outline: none;
-  font-size: 18px;
+  font-size: 20px;
   list-style-type: none;
   font-family: Sailec-Medium;
   line-height: 21px;
@@ -312,13 +329,15 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--large {
   font-size: 16px;
   line-height: 22px;
   color: #6b6f7d;
-  padding: 5px;
-  padding-bottom: 16px;
+  /* padding: 5px; */
+  padding-left: 0;
+  width: 90%;
 }
 
 .suggestion .panel p {
   text-align: left;
   padding: 10px;
+  padding-bottom: 0;
 }
 .suggestion input {
   visibility: hidden;
@@ -550,6 +569,9 @@ input[name="panel"]:checked ~ .accordion__content.accordion__content--large {
   }
   main .first-content {
     margin-top: 500px;
+  }
+  .content .question-container:first-child {
+    padding-top: 15px;
   }
 }
 @media only screen and (min-width: 1440px) {
