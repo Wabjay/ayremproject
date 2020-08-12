@@ -128,6 +128,9 @@ form input {
 form input:focus {
   border: solid 0.5px #0230b1;
 }
+form input:focus::placeholder {
+  color: transparent;
+}
 
 #show {
   background: #fff;
