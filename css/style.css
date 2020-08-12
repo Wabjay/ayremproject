@@ -240,6 +240,7 @@ section {
 }
 .products:hover {
   background: #f9fbfe;
+  border-bottom: none;
 }
 
 .products div {
@@ -816,6 +817,9 @@ section {
     max-width: 600px;
   }
 
+  .products p {
+    font-size: 16px;
+  }
   /* Copied Products CSS */
   .how-it-works {
     width: 95%;
@@ -1158,6 +1162,7 @@ section {
     width: 328px;
     text-align: center;
     margin: 0;
+    margin-bottom: 30px;
   }
   .testimony div {
     margin: 10px auto;

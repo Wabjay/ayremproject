@@ -17,7 +17,7 @@
         margin-top: -300px;
     }
     .content{
-        margin-bottom: 200px;
+        margin-bottom: 206px;
     }
 
     </style>
@@ -106,7 +106,8 @@
                 </div>
 
                 <p>N380/Dollar</p>
-                <p class="action hide-mobile">Place order</p>
+                <a href=""><p class="action hide-mobile">Place order</p></a>
+                
             </div>
 
             <div class="products">
@@ -120,7 +121,10 @@
                 </div>
 
                 <p>N380/Dollar</p>
-                <p class="action hide-mobile">Place order</p>
+                <a href="">
+                     <p class="action hide-mobile">Place order</p>
+                </a>
+               
             </div>
 
             <div class="products">
@@ -134,7 +138,10 @@
                 </div>
 
                 <p>N210/Dollar</p>
-                <p class="action hide-mobile">Place order</p>
+                <a href="">
+                    <p class="action hide-mobile">Place order</p>
+                </a>
+                
             </div>
 
             <div class="products">
@@ -148,7 +155,10 @@
                 </div>
 
                 <p>N320/Dollar</p>
-                <p class="action hide-mobile">Place order</p>
+                <a href="">
+                     <p class="action hide-mobile">Place order</p>
+                </a>
+               
             </div>
 
             <div class="products">
@@ -162,7 +172,10 @@
                 </div>
 
                 <p>N310/Dollar</p>
-                <p class="action hide-mobile">Place order</p>
+                <a href="">
+                    <p class="action hide-mobile">Place order</p>
+                </a>
+                
             </div>
 
             <div class="products">
@@ -176,7 +189,10 @@
                 </div>
 
                 <p>N322/Dollar</p>
-                <p class="action hide-mobile">Place order</p>
+                <a href="">
+                      <p class="action hide-mobile">Place order</p>
+                </a>
+              
             </div>
         </div>
 
@@ -249,9 +265,11 @@ function changeHeader() {
     if (document.body.scrollTop > 530 || document.documentElement.scrollTop > 530) {
         document.getElementById("header").className = "";
         document.querySelector(".logo").src = "../images/logo.svg";
+          document.getElementById("menu-open").src = "../images/drop.png";
     } else {
         document.getElementById("header").className = "scroll";
         document.querySelector(".logo").src = "../images/logo_white.png";
+          document.getElementById("menu-open").src = "../images/drop1.png";
     }
 }
 </script>

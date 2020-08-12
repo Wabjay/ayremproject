@@ -486,7 +486,7 @@ footer a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-right: 4px;
+    /* margin-right: 4px; */
   }
 
   nav li {
@@ -494,7 +494,7 @@ footer a:hover {
     -ms-flex-pack: space;
     justify-content: space;
     padding: 0;
-    margin: 0 8px;
+    margin: 0 0 0 8px;
     color: #fff;
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;

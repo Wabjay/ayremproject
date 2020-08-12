@@ -23,6 +23,17 @@ var acc1 = document.querySelectorAll(".suggestion > .question");
 // }
 // }
 
+const click = form.querySelector('input[name="panel"]');
+for (i = 0; i < click.length; i++) {
+  click[i].addEventListener("click", function () {
+    if (this.style.maxHeight === 150) {
+      this.style.maxHeight === 0;
+    } else {
+      this.style.maxHeight === 150;
+    }
+  });
+}
+
 for (i = 0; i < acc1.length; i++) {
   acc1[i].addEventListener("click", function () {
     var panel = this.nextElementSibling;
@@ -80,9 +91,11 @@ function changeHeader() {
   ) {
     document.getElementById("header").className = "";
     document.querySelector(".logo").src = "../images/logo.svg";
+    document.getElementById("menu-open").src = "../images/drop.png";
   } else {
     document.getElementById("header").className = "scroll";
     document.querySelector(".logo").src = "../images/logo_white.png";
+    document.getElementById("menu-open").src = "../images/drop1.png";
   }
 }
 // Close the dropdown menu if the user clicks outside of it
