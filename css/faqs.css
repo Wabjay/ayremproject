@@ -98,7 +98,10 @@ main {
 .content {
   position: relative;
   width: 100%;
-  margin: 50px auto;
+  margin: 120px auto;
+}
+.content {
+  margin: 64px auto;
 }
 .content p {
   color: #0032c9;

@@ -163,7 +163,7 @@ main {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-left: 24px;
+  /* margin-left: 24px; */
   text-align: left;
   padding-bottom: 72px;
 }
@@ -299,7 +299,7 @@ button {
     width: 100%;
     max-width: 1150px;
     margin: 0;
-    padding-top: 28px;
+    padding-top: 0;
     padding-bottom: 40px;
     font-size: 20px;
     font-family: Sailec-Regular;
@@ -307,7 +307,7 @@ button {
   }
   .two .split .title {
     padding: 0;
-    padding-top: 48px;
+    /* padding-top: 48px; */
     margin: 0;
     width: 280px;
     -ms-grid-column-align: self-start;
@@ -328,7 +328,7 @@ button {
     margin: auto;
     display: -ms-grid;
     display: grid;
-    padding-top: 68px;
+    padding-top: 144px;
     -ms-grid-columns: 1fr 2fr;
     grid-template-columns: 1fr 2fr;
   }
@@ -417,6 +417,9 @@ button {
   }
   .ready a {
     margin: auto;
+  }
+  button {
+    margin-top: 0;
   }
   .objective p {
     width: 90%;

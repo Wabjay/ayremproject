@@ -436,7 +436,7 @@ footer a:hover {
     grid-area: links;
     -ms-grid-column-align: self-end;
     justify-self: self-end;
-    margin-right: 30px;
+    margin-right: 36px;
   }
   .menu ul {
     display: -webkit-box;
@@ -494,7 +494,7 @@ footer a:hover {
     -ms-flex-pack: space;
     justify-content: space;
     padding: 0;
-    margin: 0 0 0 8px;
+    /* margin: 0 0 0 8px; */
     color: #fff;
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
@@ -507,7 +507,7 @@ footer a:hover {
     border-radius: 4px;
     font-size: 16px;
     padding: 8px 22px;
-    /* margin: 0 36px; */
+    margin-right: 32px;
     margin-left: 0;
     -ms-grid-column-align: stretch;
     justify-self: stretch;
