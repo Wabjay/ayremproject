@@ -194,7 +194,7 @@ main {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 8px;
-  width: 80%;
+  /* width: 80%; */
   height: 266px;
   margin: auto;
   margin-bottom: 82px;
@@ -243,7 +243,7 @@ button {
   padding-left: 20px;
   padding-top: 40px;
   color: #282f45;
-  line-height: 49px;
+  line-height: 32px;
 }
 .objective .name {
   font-family: Sailec-Medium;
@@ -421,6 +421,7 @@ button {
   .objective p {
     width: 90%;
     margin: auto;
+    line-height: 49px;
   }
   .objective .name,
   .objective .ceo {
